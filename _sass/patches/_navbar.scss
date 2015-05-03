@@ -132,3 +132,11 @@
     }
   }
 }
+
+.navbar-logo {
+  height: $navbar-height;
+  float: left;
+  padding: $navbar-logo-space;
+  padding-left: 0;
+  margin-right: 5px;
+}
