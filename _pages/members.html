@@ -1,0 +1,13 @@
+---
+layout: subpages-about
+maintitle: About YML
+title: Our Members
+permalink: /about/members.html
+---
+{% include construction.html %}
+
+{% for member in site.data.members %}
+<h3>{{ member.name }}</h3>
+<h4>{{ member.position}} {{ member.date }}</h4>
+<p>{{ member.bio }}</p>
+{% endfor %}
