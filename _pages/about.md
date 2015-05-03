@@ -1,10 +1,9 @@
 ---
-layout: page
+layout: subpages-about
+maintitle: About YML
 title: About YML
 permalink: /about.html
 ---
-
-
 {% include construction.html %}
 
 ## What is Young Mercy Links?
