@@ -1,0 +1,134 @@
+// YML blue navbar
+
+.navbar-yml-blue {
+  background-color: $navbar-yml-blue-bg;
+  border-color: $navbar-yml-blue-border;
+
+  .navbar-brand {
+    color: $navbar-yml-blue-brand-color;
+    &:hover,
+    &:focus {
+      color: $navbar-yml-blue-brand-hover-color;
+      background-color: $navbar-yml-blue-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: $navbar-yml-blue-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: $navbar-yml-blue-link-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-yml-blue-link-hover-color;
+        background-color: $navbar-yml-blue-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-yml-blue-link-active-color;
+        background-color: $navbar-yml-blue-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-yml-blue-link-disabled-color;
+        background-color: $navbar-yml-blue-link-disabled-bg;
+      }
+    }
+  }
+
+  // Darken the responsive nav toggle
+  .navbar-toggle {
+    border-color: $navbar-yml-blue-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: $navbar-yml-blue-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: $navbar-yml-blue-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: darken($navbar-yml-blue-bg, 7%);
+  }
+
+  // Dropdowns
+  .navbar-nav {
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $navbar-yml-blue-link-active-bg;
+        color: $navbar-yml-blue-link-active-color;
+      }
+    }
+
+    @media (max-width: $grid-float-breakpoint-max) {
+      // Dropdowns get custom display
+      .open .dropdown-menu {
+        > .dropdown-header {
+          border-color: $navbar-yml-blue-border;
+        }
+        .divider {
+          background-color: $navbar-yml-blue-border;
+        }
+        > li > a {
+          color: $navbar-yml-blue-link-color;
+          &:hover,
+          &:focus {
+            color: $navbar-yml-blue-link-hover-color;
+            background-color: $navbar-yml-blue-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-yml-blue-link-active-color;
+            background-color: $navbar-yml-blue-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-yml-blue-link-disabled-color;
+            background-color: $navbar-yml-blue-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-link {
+    color: $navbar-yml-blue-link-color;
+    &:hover {
+      color: $navbar-yml-blue-link-hover-color;
+    }
+  }
+
+  .btn-link {
+    color: $navbar-yml-blue-link-color;
+    &:hover,
+    &:focus {
+      color: $navbar-yml-blue-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: $navbar-yml-blue-link-disabled-color;
+      }
+    }
+  }
+}

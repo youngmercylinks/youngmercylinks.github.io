@@ -1,0 +1,42 @@
+$footer-height: 25px;
+$footer-breakpoint: 468px;
+
+$font-size-very-small:         ceil(($font-size-base * 0.6)) !default; // ~12px
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: $footer-height;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: darken(#5964ae, 20%);
+  /* Set the fixed height of the footer here */
+  @media (min-width: $footer-breakpoint) {
+    height: $footer-height;
+    // > .wrapper {
+    //   clear: both;
+    // }
+  }
+  @media (max-width: $footer-breakpoint) {
+    height: ($footer-height * 1.7);
+  }
+  > .wrapper {
+    > .text-muted {
+      margin: (($footer-height+-$font-size-very-small)/2-2px) 0;
+      margin-bottom: 0;
+      font-size: $font-size-very-small;
+      text-align: center;
+      >li > a {
+        color: darken(#d6df23, 15%);
+      }
+    }
+  }
+}

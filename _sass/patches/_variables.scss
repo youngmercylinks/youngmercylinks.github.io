@@ -1,0 +1,70 @@
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+
+$brand-primary:         #d6df23;
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #5964ae;
+//** Global text color on `<body>`.
+$text-color:            $gray-lighter;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base:          18px;
+$headings-font-weight:    700;
+//** Text muted color
+$text-muted:                  lighten(#5a618f, 10%);
+
+
+//== Navbar
+//
+//##
+
+// Basics of a navbar
+$navbar-collapse-max-height:       340px;
+
+// YML blue navbar
+// Reset inverted navbar basics
+$navbar-yml-blue-color:                      lighten($gray-light, 15%);
+$navbar-yml-blue-bg:                         darken(#5964ae, 15%);
+$navbar-yml-blue-border:                     darken($navbar-yml-blue-bg, 10%);
+
+// Inverted navbar links
+$navbar-yml-blue-link-color:                 lighten(#5964ae, 40%);
+$navbar-yml-blue-link-hover-color:           lighten(#d6df23, 20%);
+$navbar-yml-blue-link-hover-bg:              transparent !default;
+$navbar-yml-blue-link-active-color:          $navbar-yml-blue-link-hover-color;
+$navbar-yml-blue-link-active-bg:             darken($navbar-yml-blue-bg, 10%);
+$navbar-yml-blue-link-disabled-color:        #444;
+$navbar-yml-blue-link-disabled-bg:           transparent;
+
+// Inverted navbar brand label
+$navbar-yml-blue-brand-color:                #d6df23;
+$navbar-yml-blue-brand-hover-color:          #fff;
+$navbar-yml-blue-brand-hover-bg:             transparent;
+
+// Inverted navbar toggle
+$navbar-yml-blue-toggle-hover-bg:            $navbar-yml-blue-link-hover-color;
+$navbar-yml-blue-toggle-icon-bar-bg:         $navbar-yml-blue-bg;
+$navbar-yml-blue-toggle-border-color:        $navbar-yml-blue-link-color;
