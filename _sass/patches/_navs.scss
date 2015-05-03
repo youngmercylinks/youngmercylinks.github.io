@@ -13,7 +13,30 @@
 
 // Give the tabs something to sit on
 .nav-frankentabs {
-  @media (min-width: ($tab-break-width+1)) {
+  > li {
+    float: none;
+    text-align: center;
+
+    // Links rendered as pills
+    > a {
+      border-radius: $nav-pills-border-radius;
+      margin: 5px 10px 5px 10px;
+    }
+    + li {
+      margin-left: 2px;
+    }
+
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-active-link-hover-color;
+        background-color: $nav-pills-active-link-hover-bg;
+      }
+    }
+  }
+  @media (min-width: ($screen-sm-min)) {
     border-bottom: 1px solid $nav-tabs-border-color;
     margin-bottom: 30px;
     text-align: center;
@@ -30,6 +53,7 @@
         border: 1px solid transparent;
         border-radius: $border-radius-base $border-radius-base 0 0;
         color: $navbar-yml-blue-link-color;
+        margin: 0;
         &:hover {
           border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
         }
@@ -45,31 +69,6 @@
           border: 1px solid $nav-tabs-active-link-hover-border-color;
           border-bottom-color: transparent;
           cursor: default;
-        }
-      }
-    }
-  }
-  @media (max-width: $tab-break-width) {
-    > li {
-      float: none;
-      text-align: center;
-
-      // Links rendered as pills
-      > a {
-        border-radius: $nav-pills-border-radius;
-        margin: 5px 10px 5px 10px;
-      }
-      + li {
-        margin-left: 2px;
-      }
-
-      // Active state
-      &.active > a {
-        &,
-        &:hover,
-        &:focus {
-          color: $nav-pills-active-link-hover-color;
-          background-color: $nav-pills-active-link-hover-bg;
         }
       }
     }

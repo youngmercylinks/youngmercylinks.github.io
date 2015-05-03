@@ -110,4 +110,4 @@ $nav-pills-active-link-hover-bg:            darken($body-bg, 15%) !default;
 $nav-pills-active-link-hover-color:         $brand-primary !default;
 
 //== Frankentabs
-$tab-break-width:                           480px;
+$tab-break-width:                           480px; // Using $screen-sm-min in the code instead
