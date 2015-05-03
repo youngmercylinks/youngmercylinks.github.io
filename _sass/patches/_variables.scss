@@ -41,6 +41,10 @@ $text-muted:                  lighten(#5a618f, 10%);
 //
 //##
 
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     408px; // Used to be 768px ($screen-sm-min)
+
 // Basics of a navbar
 $navbar-collapse-max-height:       340px;
 
