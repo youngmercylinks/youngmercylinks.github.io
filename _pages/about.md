@@ -9,14 +9,14 @@ permalink: /about.html
 ## What is Young Mercy Links?
 
 In 2005, the Institute of the Sisters of Mercy of Australia (now
-[ISMAPNG](http://institute.mercy.org.au)) raised concerns at the annual
+[ISMAPNG](http://institute.mercy.org.au)) raised concerns at their annual
 conference that students who had been volunteering while attending Mercy
 schools were finding it difficult to maintain their passion for raising
 awareness of social justice issues as well as access to connections for
 relevant volunteering activities after graduation. In response, the
 Melbourne congregation started a new program---Young Mercy Links---to assist
 young adults with a strong sense of social justice in finding volunteering
-opportunities after they've left school. 
+opportunities after they've left school.
 
 Ten years later, Young Mercy Links (YML) has grown significantly and is
 still going strong. Our coordinator, Bernadette Inman, helps to put members
