@@ -30,3 +30,26 @@ h1, h2, h3, h4, h5, h6,
     color: $headings-small-color;
   }
 }
+
+
+// Wrapping long email
+// -------------------------
+
+.on-xs-screen {
+  display: block !important;
+  visibility: visible !important;
+  text-align: center;
+  @media (min-width: ($screen-xs-max)) {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+.off-xs-screen {
+  display: none !important;
+  visibility: hidden !important;
+  @media (min-width: ($screen-xs-max)) {
+    display: inline-block !important;
+    visibility: visible !important;
+  }
+}
