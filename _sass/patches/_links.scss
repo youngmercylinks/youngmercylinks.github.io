@@ -1,0 +1,11 @@
+a[href^="http://"]:after {
+  font-family: 'Glyphicons Halflings';
+  // font-size: $font-size-small;
+  margin-left: 5px;
+  content: "\e164";
+}
+
+a[href^="http://www.youngmercylinks.github.io"]:after,
+a[href^="http://youngmercylinks.github.io"]:after  {
+  content: "";
+}
