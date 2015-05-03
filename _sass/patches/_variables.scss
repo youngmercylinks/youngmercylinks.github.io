@@ -32,6 +32,13 @@ $link-hover-color:      lighten($link-color, 15%);
 $link-hover-decoration: underline;
 
 
+//== Footer
+//
+//##
+
+$footer-height: 25px;
+$footer-breakpoint: 468px;
+
 
 //== Typography
 //
@@ -39,6 +46,9 @@ $link-hover-decoration: underline;
 
 $font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-size-base:          18px;
+
+$font-size-very-small:    ceil(($font-size-base * 0.6)) !default; // ~12px
+
 $headings-font-weight:    700;
 //** Text muted color
 $text-muted:                  lighten(#5a618f, 10%);
