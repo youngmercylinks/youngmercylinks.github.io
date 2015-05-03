@@ -1,0 +1,35 @@
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="{{ site.url }}js/bootstrap.min.js"></script>
+
+{% capture location %}{{ page.url | remove_first:'/' | split:'/' | first | split:'.' | first }}{% endcapture %}
+<nav role="navigation" class="navbar navbar-default navbar-fixed-top navbar-yml-blue">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="{{ site.url }}" class="navbar-brand gf-montserrat text-shadow"><b>YML</b></a>
+    </div>
+    <!-- Collection of nav links and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li{% if location == 'about' %} class="active" {% endif %}>
+          <a href="/about.html">About</a>
+        </li>
+        {% comment %}<li{% if location == 'faq' %} class="active" {% endif %}>
+          <a href="/faq.html">FAQ</a>
+        </li>{% endcomment %}
+        <li{% if location == 'archive' %} class="active" {% endif %}>
+          <a href="/blog.html">Blog</a>
+        </li>
+      <li{% if location == 'contact' %} class="active" {% endif %}>
+          <a href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
