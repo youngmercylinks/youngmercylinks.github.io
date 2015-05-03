@@ -1,4 +1,5 @@
-a[href^="http://"]:after {
+a[href^="http://"]:after,
+a[href^="https://"]:after {
   font-family: 'FontAwesome';
   // font-size: $font-size-small;
   margin-left: 5px;
