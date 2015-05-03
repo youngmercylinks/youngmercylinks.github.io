@@ -3,10 +3,44 @@ a[href^="https://"]:after {
   font-family: 'FontAwesome';
   // font-size: $font-size-small;
   margin-left: 5px;
-  content:"\f08e";
+  content: "\f08e";
 }
 
 a[href^="http://www.youngmercylinks.github.io"]:after,
 a[href^="http://youngmercylinks.github.io"]:after  {
   content: "";
+}
+
+.link-unstyled {
+  > a:after {
+    content: "";
+    margin: 0;
+  }
+  > a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: inherit;
+  }
+}
+
+.link-unstyled,
+.link-unstyled:hover,
+.link-unstyled:focus {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.link-noglpyh {
+  > a:after {
+    content: "";
+    margin: 0;
+  }
+  > a, a:hover, a:focus {
+    text-decoration: inherit;
+  }
+}
+
+.link-noglyph,
+.link-noglyph:hover,
+.link-noglyph:focus {
+  text-decoration: inherit;
 }
