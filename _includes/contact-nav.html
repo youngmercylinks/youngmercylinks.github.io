@@ -1,0 +1,6 @@
+{% capture location %}{{ page.url | remove_first:'/' | split:'/' | first | split:'.' | first }}{% endcapture %}
+{% capture sublocation %}{{ page.url | remove_first:'/' | split:'/' | last | split:'.' | first }}{% endcapture %}
+<ul class="nav nav-tabs">
+  <li role="presentation"{% if location == 'contact' and sublocation == 'contact' %} class="active"{% endif %}><a href="/contact.html">Contact YML</a></li>
+  <li role="presentation"{% if location == 'contact' and sublocation == 'othergroups' %} class="active"{% endif %}><a href="/contact/othergroups.html">Other Mercy Groups</a></li>
+</ul>

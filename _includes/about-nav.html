@@ -1,0 +1,7 @@
+{% capture location %}{{ page.url | remove_first:'/' | split:'/' | first | split:'.' | first }}{% endcapture %}
+{% capture sublocation %}{{ page.url | remove_first:'/' | split:'/' | last | split:'.' | first }}{% endcapture %}
+<ul class="nav nav-tabs">
+  <li role="presentation"{% if location == 'about' and sublocation == 'about' %} class="active"{% endif %}><a href="/about.html">About YML</a></li>
+  <li role="presentation"{% if location == 'about' and sublocation == 'mission' %} class="active"{% endif %}><a href="/about/mission.html">Mission Statement</a></li>
+  <li role="presentation"{% if location == 'about' and sublocation == 'members' %} class="active"{% endif %}><a href="/about/members.html">Our members</a></li>
+</ul>
