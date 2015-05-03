@@ -1,0 +1,22 @@
+# Site settings
+title: Young Mercy Links
+description: >
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+url: "http://youngmercylinks.github.io"
+twitter_username: youngmercylinks
+github_username:  youngmercylinks
+
+# Build settings
+markdown: kramdown
+
+include: ['_pages']
+permalink: '/blog/:year/:month/:title.html'
+relative_permalinks: false
+excerpt_separator: "<!-- more -->"
+
+exclude: ['CNAME', 'Gemfile*', 'exclude', 'README.md', 'LICENCE.txt']
+
+gems:
+  - jekyll-sitemap
