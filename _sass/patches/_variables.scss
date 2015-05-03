@@ -24,6 +24,13 @@ $brand-danger:          #d9534f !default;
 $body-bg:               #5964ae;
 //** Global text color on `<body>`.
 $text-color:            $gray-lighter;
+//** Global textual link color.
+$link-color:            $brand-primary;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      lighten($link-color, 15%);
+//** Link hover decoration.
+$link-hover-decoration: underline;
+
 
 
 //== Typography
@@ -72,3 +79,28 @@ $navbar-yml-blue-brand-hover-bg:             transparent;
 $navbar-yml-blue-toggle-hover-bg:            lighten($navbar-yml-blue-bg, 20%);
 $navbar-yml-blue-toggle-icon-bar-bg:         $navbar-yml-blue-link-color;
 $navbar-yml-blue-toggle-border-color:        $navbar-yml-blue-link-color;
+
+
+
+//== Navs
+//
+//##
+
+//=== Shared nav styles
+$nav-link-padding:                          10px 15px;
+$nav-link-hover-bg:                         darken($body-bg, 5%);
+
+$nav-disabled-link-color:                   $gray-light;
+$nav-disabled-link-hover-color:             $gray-light;
+
+//== Tabs
+$nav-tabs-border-color:                     darken($body-bg, 20%);
+
+$nav-tabs-link-hover-border-color:          darken($body-bg, 5%);
+
+$nav-tabs-active-link-hover-bg:             $body-bg;
+$nav-tabs-active-link-hover-color:          $brand-primary;
+$nav-tabs-active-link-hover-border-color:   darken($body-bg, 20%);
+
+$nav-tabs-justified-link-border-color:            darken($body-bg, 20%);
+$nav-tabs-justified-active-link-border-color:     $body-bg;
