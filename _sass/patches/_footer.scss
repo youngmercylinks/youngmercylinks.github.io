@@ -1,16 +1,14 @@
-$footer-height: 25px;
-$footer-breakpoint: 468px;
-
-$font-size-very-small:         ceil(($font-size-base * 0.6)) !default; // ~12px
-
 html {
   position: relative;
   min-height: 100%;
 }
 
 body {
-  margin-bottom: $footer-height;
+  margin-bottom: ($footer-height * 1.7);
   min-height: 100%;
+  @media (min-width: $footer-breakpoint) {
+    margin-bottom: $footer-height;
+  }
 }
 
 .footer {
@@ -19,14 +17,9 @@ body {
   width: 100%;
   background-color: darken(#5964ae, 20%);
   /* Set the fixed height of the footer here */
+  height: ($footer-height * 1.7);
   @media (min-width: $footer-breakpoint) {
     height: $footer-height;
-    // > .wrapper {
-    //   clear: both;
-    // }
-  }
-  @media (max-width: $footer-breakpoint) {
-    height: ($footer-height * 1.7);
   }
   > .wrapper {
     > .text-muted {
