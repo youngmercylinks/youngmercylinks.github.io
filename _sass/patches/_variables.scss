@@ -104,3 +104,10 @@ $nav-tabs-active-link-hover-border-color:   darken($body-bg, 20%);
 
 $nav-tabs-justified-link-border-color:            darken($body-bg, 20%);
 $nav-tabs-justified-active-link-border-color:     $body-bg;
+
+//== Pills
+$nav-pills-active-link-hover-bg:            darken($body-bg, 15%) !default;
+$nav-pills-active-link-hover-color:         $brand-primary !default;
+
+//== Frankentabs
+$tab-break-width:                           480px;
