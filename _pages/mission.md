@@ -4,3 +4,4 @@ maintitle: About YML
 title: Mission Statement
 permalink: /about/mission.html
 ---
+{% include construction.html %}

@@ -1,6 +1,9 @@
 .nav-tabs {
   margin-bottom: 30px;
+  text-align: center;
   > li {
+    float:none;
+    display:inline-block;
     > a {
       color: $navbar-yml-blue-link-color;
     }
