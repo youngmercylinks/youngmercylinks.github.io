@@ -1,0 +1,45 @@
+---
+layout: default
+title: "Blog Posts"
+permalink: /blog.html
+---
+
+<div class="home">
+
+  <header class="post-header">
+    <h1 class="post-title">Blog Posts</h1>
+  </header>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 50 }}&hellip; (<a href="{{ post.url }}">Read More</a>)</p>
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    <ul>
+      {% if paginator.previous_page %}
+      <li class="prev"><a href="/blog/{% if paginator.previous_page != 1 %}page{{ paginator.previous_page }}{% endif %}">Previous</a></li>
+      {% endif %}
+      <li><a {% if paginator.page == 1 %}class="active" {% endif %}href="/blog/">1</a></li>
+      {% for count in (2..paginator.total_pages) %}
+      <li><a {% if paginator.page == count %}class="active" {% endif %}href="/blog/page{{ count }}">{{ count }}</a></li>
+      {% endfor %}
+      {% if paginator.next_page %}
+      <li class="next"><a href="/blog/page{{ paginator.next_page }}">Next</a></li>
+      {% endif %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
