@@ -3,6 +3,21 @@ body {
 }
 
 
+.navbar-nav > li.split-navbar-right > a {
+    padding-left: 7px;
+    @media (max-width: $grid-float-breakpoint-max) {
+      display: none !important;
+      visibility: hidden !important;
+    }
+}
+
+.navbar-nav > li.split-navbar-left > a {
+    padding-right: 0;
+}
+
+
+
+
 //== YML blue navbar
 //
 //##
@@ -48,6 +63,29 @@ body {
       &:focus {
         color: $navbar-yml-blue-link-disabled-color;
         background-color: $navbar-yml-blue-link-disabled-bg;
+      }
+    }
+
+    // Dropdown menu colours
+    .dropdown-menu {
+      background: $navbar-yml-blue-bg;
+      color: darken($body-bg, 5%);
+      > li {
+        .active {
+          background-color: $navbar-yml-blue-link-active-bg;
+        }
+        > a {
+          color: $navbar-yml-blue-link-color;
+          background-color: $navbar-yml-blue-link-hover-bg;
+
+          &:hover {
+            color: $navbar-yml-blue-link-hover-color;
+            background-color: $navbar-yml-blue-link-hover-bg;
+          }
+          &:focus {
+            color: $navbar-yml-blue-link-hover-color;
+          }
+        }
       }
     }
   }

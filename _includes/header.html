@@ -20,17 +20,34 @@
         <li{% if location == 'index' %} class="active" {% endif %}>
           <a href="/">Home</a>
         </li>
-        <li{% if location == 'about' %} class="active" {% endif %}>
+        <li class="split-navbar-left{% if location == 'about' %} active{% endif %}">
           <a href="/about.html">About</a>
         </li>
-        {% comment %}<li{% if location == 'faq' %} class="active" {% endif %}>
+        <li class="dropdown split-navbar-right{% if location == 'about' %} active{% endif %}">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li{% if location == 'about' %} class="active" {% endif %}><a href="/about.html">About YML</a></li>
+            <li{% if location == 'mission' %} class="active" {% endif %}><a href="/about/mission.html">Mission Statement</a></li>
+            <li{% if location == 'members' %} class="active" {% endif %}><a href="/about/members.html">Our Members</a></li>
+          </ul>
+        </li>
+        {% comment %}
+        <li{% if location == 'faq' %} class="active" {% endif %}>
           <a href="/faq.html">FAQ</a>
-        </li>{% endcomment %}
+        </li>
+        {% endcomment %}
         <li{% if location == 'blog' %} class="active" {% endif %}>
           <a href="/blog.html">Blog</a>
         </li>
-      <li{% if location == 'contact' %} class="active" {% endif %}>
+        <li class="split-navbar-left{% if location == 'contact' %} active{% endif %}">
           <a href="/contact.html">Contact</a>
+        </li>
+        <li class="dropdown split-navbar-right{% if location == 'contact' %} active{% endif %}">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li{% if location == 'contact' %} class="active" {% endif %}><a href="/contact.html">Contact Us</a></li>
+            <li{% if location == 'othergroups' %} class="active" {% endif %}><a href="/contact/othergroups.html">Other Groups</a></li>
+          </ul>
         </li>
       </ul>
     </div>
