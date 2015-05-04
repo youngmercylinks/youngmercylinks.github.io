@@ -9,6 +9,24 @@ body {
   visibility: visible;
 }
 
+.navbar-nav > li.dropdown > a {
+  display: none !important;
+  visibility: hidden !important;
+  @media (min-width: $grid-float-breakpoint-max) {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+
+.navbar-nav > li.dropdown-standin > a {
+  display: block !important;
+  visibility: visible !important;
+  @media (min-width: $grid-float-breakpoint-max) {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
 
 //== YML blue navbar
 //
