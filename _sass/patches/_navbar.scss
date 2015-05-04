@@ -2,13 +2,6 @@ body {
   margin-top: $navbar-height;
 }
 
-
-// Make navbar dropdowns expand on hover
-.navbar-nav > li.dropdown:hover > ul.dropdown-menu {
-  display: block;
-  visibility: visible;
-}
-
 .navbar-nav > li.dropdown > a {
   display: none !important;
   visibility: hidden !important;
