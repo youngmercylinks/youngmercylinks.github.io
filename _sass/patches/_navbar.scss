@@ -3,19 +3,11 @@ body {
 }
 
 
-.navbar-nav > li.split-navbar-right > a {
-    padding-left: 7px;
-    @media (max-width: $grid-float-breakpoint-max) {
-      display: none !important;
-      visibility: hidden !important;
-    }
+// Make navbar dropdowns expand on hover
+.navbar-nav > li.dropdown:hover > ul.dropdown-menu {
+  display: block;
+  visibility: visible;
 }
-
-.navbar-nav > li.split-navbar-left > a {
-    padding-right: 0;
-}
-
-
 
 
 //== YML blue navbar

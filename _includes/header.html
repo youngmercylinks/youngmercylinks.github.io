@@ -20,11 +20,8 @@
         <li{% if location == 'index' %} class="active" {% endif %}>
           <a href="/">Home</a>
         </li>
-        <li class="split-navbar-left{% if location == 'about' %} active{% endif %}">
-          <a href="/about.html">About</a>
-        </li>
-        <li class="dropdown split-navbar-right{% if location == 'about' %} active{% endif %}">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="caret"></span></a>
+        <li class="dropdown{% if location == 'about' %} active{% endif %}">
+          <a href="/about.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li{% if location == 'about' %} class="active" {% endif %}><a href="/about.html">About YML</a></li>
             <li{% if location == 'mission' %} class="active" {% endif %}><a href="/about/mission.html">Mission Statement</a></li>
@@ -39,11 +36,8 @@
         <li{% if location == 'blog' %} class="active" {% endif %}>
           <a href="/blog.html">Blog</a>
         </li>
-        <li class="split-navbar-left{% if location == 'contact' %} active{% endif %}">
-          <a href="/contact.html">Contact</a>
-        </li>
-        <li class="dropdown split-navbar-right{% if location == 'contact' %} active{% endif %}">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="caret"></span></a>
+        <li class="dropdown{% if location == 'contact' %} active{% endif %}">
+          <a href="/contact.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false">Contact <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li{% if location == 'contact' %} class="active" {% endif %}><a href="/contact.html">Contact Us</a></li>
             <li{% if location == 'othergroups' %} class="active" {% endif %}><a href="/contact/othergroups.html">Other Groups</a></li>
