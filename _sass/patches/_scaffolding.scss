@@ -10,7 +10,28 @@ body {
 // Centered columns styles
 .row-centered {
   text-align:center;
+  > div {
+    display:inline-block;
+    float:none;
+    text-align:left;
+    // margin-right:-4px;
+  }
 }
+
+.text-row {
+  max-width: $content-width;
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-row-wide {
+  max-width: ($content-width + 200);
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .col-centered {
   display:inline-block;
   float:none;
