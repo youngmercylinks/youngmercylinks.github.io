@@ -13,7 +13,7 @@ a[href^="http://youngmercylinks.github.io"]:after  {
 
 .link-unstyled {
   > a:after {
-    content: "";
+    content: none;
     margin: 0;
   }
   > a, a:hover, a:focus {
@@ -22,11 +22,15 @@ a[href^="http://youngmercylinks.github.io"]:after  {
   }
 }
 
-.link-unstyled,
-.link-unstyled:hover,
-.link-unstyled:focus {
+a.link-unstyled,
+a.link-unstyled:hover,
+a.link-unstyled:focus {
   color: inherit;
   text-decoration: inherit;
+}
+
+a.link-unstyled:after {
+  content: none;
 }
 
 .link-noglpyh {
@@ -39,8 +43,6 @@ a[href^="http://youngmercylinks.github.io"]:after  {
   }
 }
 
-.link-noglyph,
-.link-noglyph:hover,
-.link-noglyph:focus {
-  text-decoration: inherit;
+a.link-noglyph:after {
+  content: none;
 }
