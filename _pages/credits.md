@@ -1,6 +1,6 @@
 ---
 layout: page
-=title: Credits
+title: Credits
 permalink: /credits.html
 ---
 {% include construction.html %}
