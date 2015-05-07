@@ -7,6 +7,11 @@ description: >
 url: "http://youngmercylinks.github.io"
 twitter_username: youngmercylinks
 github_username:  youngmercylinks
+og:
+  image:
+    location: "/OpenGraph_2015-05-05.png"
+    width: 1200
+    height: 650
 
 # Build settings
 markdown: kramdown
