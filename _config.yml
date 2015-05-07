@@ -20,3 +20,4 @@ exclude: ['CNAME', 'Gemfile*', 'exclude', 'README.md', 'LICENCE.txt']
 
 gems:
   - jekyll-sitemap
+  - jekyll-redirect-from
