@@ -116,6 +116,11 @@ body {
     color: darken($body-bg, 20%);
 }
 
+.event-meta {
+    font-size: $font-size-small;
+    color: $text-color;
+}
+
 .post-link {
     display: block;
     font-size: 24px;

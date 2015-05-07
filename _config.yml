@@ -23,6 +23,11 @@ excerpt_separator: "<!-- more -->"
 
 exclude: ['CNAME', 'Gemfile*', 'exclude', 'README.md', 'LICENCE.txt']
 
+collections:
+  events:
+    output: true
+    permalink: /events/:year/:title.html
+
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from

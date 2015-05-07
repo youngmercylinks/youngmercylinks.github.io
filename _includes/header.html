@@ -31,9 +31,15 @@
         <li class="dropdown-standin{% if location == 'about' %} active{% endif %}">
           <a href="/about.html">About</a>
         </li>
+        <li{% if location == 'events' %} class="active" {% endif %}>
+          <a href="/events.html">Events</a>
+        </li>
         {% comment %}
         <li{% if location == 'faq' %} class="active" {% endif %}>
           <a href="/faq.html">FAQ</a>
+        </li>
+        <li{% if location == 'links' %} class="active" {% endif %}>
+          <a href="/links.html">Links</a>
         </li>
         {% endcomment %}
         <li{% if location == 'blog' %} class="active" {% endif %}>
