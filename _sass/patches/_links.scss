@@ -6,8 +6,14 @@ a[href^="https://"]:after {
   content: "\f08e";
 }
 
+a[href^="http://yml.org.au"]:after,
+a[href^="https://yml.org.au"]:after,
+a[href^="http://www.yml.org.au"]:after,
+a[href^="https://www.yml.org.au"]:after,
 a[href^="http://www.youngmercylinks.github.io"]:after,
-a[href^="http://youngmercylinks.github.io"]:after  {
+a[href^="https://www.youngmercylinks.github.io"]:after,
+a[href^="http://youngmercylinks.github.io"]:after,
+a[href^="https://youngmercylinks.github.io"]:after  {
   content: "";
 }
 
