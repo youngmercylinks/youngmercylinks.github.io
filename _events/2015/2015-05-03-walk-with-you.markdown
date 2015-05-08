@@ -13,7 +13,7 @@ excerpt: >
 permalink: events/2015/walk-with-you.html
 og:
   image:
-    location: "/images/2015/YMLFlyer_May2015_webLarge.jpg"
+    location: "/images/2015/YMLFlyer_May2015_OG.png"
     width: 1684
     height: 1190
 ---
