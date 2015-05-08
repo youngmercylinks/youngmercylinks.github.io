@@ -20,7 +20,7 @@
         <li{% if location == 'index' %} class="active" {% endif %}>
           <a href="/">Home</a>
         </li>
-        <li class="dropdown{% if location == 'about' %} active{% endif %}">
+        {% comment %}<li class="dropdown{% if location == 'about' %} active{% endif %}">
           <a href="/about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li{% if location == 'about' %} class="active" {% endif %}><a href="/about.html">About YML</a></li>
@@ -29,6 +29,9 @@
           </ul>
         </li>
         <li class="dropdown-standin{% if location == 'about' %} active{% endif %}">
+          <a href="/about.html">About</a>
+        </li>{% endcomment %}
+        <li{% if location == 'about' %} class="active" {% endif %}>
           <a href="/about.html">About</a>
         </li>
         <li{% if location == 'events' %} class="active" {% endif %}>
