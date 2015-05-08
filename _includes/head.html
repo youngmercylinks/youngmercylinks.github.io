@@ -11,9 +11,9 @@
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="icon" href="favicon.png">
-  <link rel="icon" sizes="196x196" href="favicon-large.png">
-  <link rel="apple-touch-icon" href="ios-app-icon.png">
+  <link rel="icon" href="/favicon.png">
+  <link rel="icon" sizes="196x196" href="/favicon-large.png">
+  <link rel="apple-touch-icon" href="/ios-app-icon.png">
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}"/>
   <meta property="og:site_name" content="{{ site.title }}"/>
   <meta property="og:image" content="{% if page.og.image.location %}{{ page.og.image.location | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.og.image.location | prepend: site.baseurl | prepend: site.url }}{% endif %}"/>
