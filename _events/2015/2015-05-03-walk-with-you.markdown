@@ -23,7 +23,9 @@ Come along to our May social justice evening, "We'll walk with you" to hear the 
 
 [Check it out on Facebook!](http://www.facebook.com/events/741845572598853/)
 
+<a href="/images/2015/YMLFlyer_May2015_webLarge.jpg">
 <img src="/images/2015/YMLFlyer_May2015_webLarge.jpg" width="100%"/>
+</a>
 
 
 ### Programme:
