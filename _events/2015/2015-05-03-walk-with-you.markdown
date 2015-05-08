@@ -13,9 +13,9 @@ excerpt: >
 permalink: events/2015/walk-with-you.html
 og:
   image:
-    location: "/images/YMLFlyer_May2015.jpg"
-    width: 3508
-    height: 2480
+    location: "/images/2015/YMLFlyer_May2015_webLarge.jpg"
+    width: 1684
+    height: 1190
 ---
 Come along to our May social justice evening, "We'll walk with you" to hear the stories behind arriving in Australia as a refugee or asylum seeker.
 
@@ -23,7 +23,7 @@ Come along to our May social justice evening, "We'll walk with you" to hear the 
 
 [Check it out on Facebook!](http://www.facebook.com/events/741845572598853/)
 
-<img src="/images/YMLFlyer_May2015.jpg" width="100%"/>
+<img src="/images/2015/YMLFlyer_May2015_webLarge.jpg" width="100%"/>
 
 
 ### Programme:
