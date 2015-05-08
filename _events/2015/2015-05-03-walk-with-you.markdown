@@ -8,7 +8,7 @@ times: 5pm to 8pm
 location: "Mercy Theatre, ACU"
 gm-link: "http://www.google.com.au/maps/place/29+Young+St,+Fitzroy+VIC+3065"
 excerpt: >
-  Come along to our May social justice evening, "We'll walk with you" to hear
+  Come along to our May social justice evening, &ldquo;We'll walk with you&rdquo; to hear
   the stories behind arriving in Australia as a refugee or asylum seeker.
 permalink: events/2015/walk-with-you.html
 og:
