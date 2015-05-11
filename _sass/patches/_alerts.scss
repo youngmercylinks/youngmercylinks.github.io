@@ -1,0 +1,5 @@
+.alert-subtle {
+  @include alert-variant(lighten($body-bg,5%), darken($body-bg,10%), darken($body-bg,10%));
+  font-size: $font-size-small;
+  text-align: center;
+}

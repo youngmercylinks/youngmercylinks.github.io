@@ -52,3 +52,15 @@ a.link-unstyled:after {
 a.link-noglyph:after {
   content: none;
 }
+
+a.link-subtle,
+a.link-subtle:hover,
+a.link-subtle:focus {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a.link-subtle:after {
+  content: none;
+}
