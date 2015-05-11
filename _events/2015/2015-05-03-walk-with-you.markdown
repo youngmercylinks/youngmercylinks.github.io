@@ -35,7 +35,7 @@ Time   | Event
 5:30pm | Introduction
 5:46pm | Presentation from the Asylum Seekers Resource Centre
 6:18pm | Short break
-6:23pm | Presentation from the Edmund Rice Community & Refugee Services
+6:23pm | Presentation from Edmund Rice Community & Refugee Services
 6:50pm | Presentation from WhyICare
 7:05pm | Actions you can take
 7:20pm | Wrap-up
