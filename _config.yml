@@ -15,6 +15,8 @@ og:
 
 # Build settings
 markdown: kramdown
+sass:
+  style: compressed
 
 include: ['_pages']
 permalink: '/blog/:year/:month/:title.html'
