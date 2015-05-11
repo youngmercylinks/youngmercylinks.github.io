@@ -2,7 +2,8 @@
 layout: post
 title: 'May Social Justice Evening'
 date: 2015-05-03 12:42
-tags:
+tags: ['justice evening', 'event', 'asylum seekers', 'refugees']
+author: Nathan
 ---
 Come along to our May social justice evening, "We'll walk with you" to hear the stories behind arriving in Australia as a refugee or asylum seeker.
 
@@ -10,4 +11,4 @@ Come along to our May social justice evening, "We'll walk with you" to hear the 
 
 [Check it out on Facebook!](http://www.facebook.com/events/741845572598853/)
 
-<img src="/images/YMLFlyer_May2015.jpg" width="100%"/>
+<img src="/images/2015/YMLFlyer_May2015_webLarge.jpg" width="100%"/>
