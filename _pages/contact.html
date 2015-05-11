@@ -3,7 +3,40 @@ layout: subpages-contact
 maintitle: Contact
 title: Contact YML
 permalink: /contact.html
+head: "<script src='https://www.google.com/recaptcha/api.js'></script>"
 ---
 <p>Contact our coordinator at: {% include ROT13-email.html %}<p>
 
 <p>Like us <a href="http://facebook.com/youngmercylinks">on Facebook!</a></p>
+
+<h3>Send us a message:</h3>
+<form name="contact-form" action="//formspree.io/contact@yml.org.au" method="POST">
+  <div class="form-group">
+    <!-- <label for="name">Name</label> -->
+    <input type="text" class="form-control" id="name" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <!-- <label for="_replyto">Email address</label> -->
+    <input type="email" class="form-control" id="_replyto" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="subject-select">What do you want to ask about?</label>
+    <select class="form-control" id="subject">
+      <option value="Joining" onClick="setSubject(this.form)">Joining Young Mercy Links</option>
+      <option value="Charity" onClick="setSubject(this.form)">YML members volunteering with your charity</option>
+      <option value="Schools" onClick="setSubject(this.form)">Putting your students in touch with YML</option>
+      <option value="other" onClick="setSubject(this.form)">Other...</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="subject" placeholder="Subject" hidden>
+  </div>
+  <div class="form-group">
+    <!-- <label for="exampleInputFile">Message</label> -->
+    <textarea class="form-control" rows="4" placeholder="Your message..."></textarea>
+  </div>
+  <input type="text" name="_gotcha" style="display:none" />
+  <input type="hidden" name="_next" value="/contact/thanks.html"/>
+  <div class="g-recaptcha" data-sitekey="6LdqqwYTAAAAAFqZ2E7FyYweVo66Bs8AtpT9Y-fj" data-theme="dark"></div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
