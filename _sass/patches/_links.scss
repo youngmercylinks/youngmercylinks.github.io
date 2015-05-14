@@ -1,3 +1,7 @@
+a {
+  word-wrap: break-word;
+}
+
 a[href^="http://"]:after,
 a[href^="https://"]:after {
   font-family: 'FontAwesome';
