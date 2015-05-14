@@ -17,6 +17,8 @@ og:
     width: 1684
     height: 1190
 ---
+Get more info from the night [here!](/links/events/2015/walk-with-you.html)
+
 Come along to our May social justice evening, "We'll walk with you" and hear what it’s like to arrive in Australia as an asylum seeker or refugee trying to start a new life, and how you can make a difference. With guest speakers from the Asylum Seekers Resource Centre, Edmund Rice, and WhyICare.
 
 13 May 2015, 5pm to 8pm, Mercy lecture theatre, ACU, 29 Young St. Fitzroy.
@@ -39,6 +41,3 @@ Time   | Event
 6:50pm | Presentation from WhyICare
 7:05pm | Actions you can take
 7:20pm | Wrap-up
-
-\\
-Get more info from the night [here!](/links/events/2015/walk-with-you.html)
