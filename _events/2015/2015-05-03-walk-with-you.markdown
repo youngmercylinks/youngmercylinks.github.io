@@ -2,8 +2,8 @@
 layout: events
 title: "We'll walk with you"
 shorttitle: walk-with-you
-year: 2015
-date: 2015-05-13
+start: 2015-05-13 17:00:00
+end: 2015-05-13 20:00:00
 times: 5pm to 8pm
 location: "Mercy Theatre, ACU"
 gm-link: "http://www.google.com.au/maps/place/29+Young+St,+Fitzroy+VIC+3065"
