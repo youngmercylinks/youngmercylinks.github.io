@@ -1,6 +1,4 @@
-{% capture location %}{{ page.url | remove_first:'/' | split:'/' | first | split:'.' | first }}{% endcapture %}
-
-<nav role="navigation" class="navbar navbar-default navbar-fixed-top navbar-yml-blue">
+{% capture location %}{{ page.url | remove_first:'/' | split:'/' | first | split:'.' | first }}{% endcapture %}<nav role="navigation" class="navbar navbar-default navbar-fixed-top navbar-yml-blue">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -60,5 +58,4 @@
     </div>
   </div>
 </nav>
-
 <noscript><div class="alert alert-subtle" role="alert">This site relies on JavaScript to function. Your experience is likely to be poor without it. Please consider turning it on, or <a class="link-subtle" href="http://browsehappy.com/">upgrading to a more modern browser</a>.</div></noscript>
