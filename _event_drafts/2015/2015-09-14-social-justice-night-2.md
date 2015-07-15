@@ -1,16 +1,16 @@
 ---
 layout: events
-title: "We'll walk with you"
-shorttitle: walk-with-you
-start: 2015-05-13 17:00:00
-end: 2015-05-13 20:00:00
+title: "Social Justice Night 2"
+shorttitle: social-justice-night-2
+start: 2015-09-14 17:00:00
+end: 2015-07-14 20:00:00
 times: 5pm to 8pm
 location: "Mercy Theatre, ACU"
 gm-link: "http://www.google.com.au/maps/place/29+Young+St,+Fitzroy+VIC+3065"
 excerpt: >
   Come along to our May social justice evening, &ldquo;We'll walk with you&rdquo; to hear
   the stories behind arriving in Australia as a refugee or asylum seeker.
-permalink: events/2015/walk-with-you.html
+permalink: events/2015/social-justice-night-2.html
 thumbnail: /images/2015/YMLFlyer_May2015_webSmall.jpg
 og:
   image:
@@ -18,11 +18,9 @@ og:
     width: 1684
     height: 1190
 ---
-Get more info from the night [here!](/links/events/2015/walk-with-you.html)
+Come to our social justice evenining. Come to our social justice evenining. Come to our social justice evenining. Come to our social justice evenining. Come to our social justice evenining. Come to our social justice evenining. Come to our social justice evenining. Come to our social justice evenining. Come to our social justice evenining.
 
-Come along to our May social justice evening, "We'll walk with you" and hear what it’s like to arrive in Australia as an asylum seeker or refugee trying to start a new life, and how you can make a difference. With guest speakers from the Asylum Seekers Resource Centre, Edmund Rice, and WhyICare.
-
-13 May 2015, 5pm to 8pm, Mercy lecture theatre, ACU, 29 Young St. Fitzroy.
+Come to our social justice evenining. Come to our social justice evenining.
 
 [Check it out on Facebook!](http://www.facebook.com/events/741845572598853/)
 

@@ -6,59 +6,191 @@ layout: default
   <div class="row text-row">
     <div class="col-xs-12" style="text-align: center;">
 
-    <h1 class="gf-montserrat text-shadow" style="color: #d6df23;">Young Mercy Links</h1>
-    {% comment %}<h3 class="gf-montserrat text-shadow">This site is under construction. Please be patient.</h3>{% endcomment %}
+    {% comment %}<h1 class="gf-montserrat text-shadow" style="color: #d6df23;">Young Mercy Links</h1>
+    <h3 class="gf-montserrat text-shadow">This site is under construction. Please be patient.</h3>{% endcomment %}
 
     {% include logo.svg.html %}
 
     <br><br>
     <p align="center">Find us <a href="http://facebook.com/youngmercylinks">on Facebook</a></p>
+    <div class="fb-like" data-href="https://facebook.com/youngmercylinks" data-width="350" data-layout="standard" data-action="like" data-colorscheme="dark" data-show-faces="false" data-share="false"></div>
 
     </div>
   </div>
 
 
-  <div class="row text-row-wide">
-    <div class="col-xs-12 center-block text-col">
+  <ul class="post-list">
+    {% assign events = site.events %}
+    {% capture nowunix %}{{ 'now' | date: '%s' | plus: 0 }}{% endcapture %}
+    {% assign timeout = 604800 %}
+    {% assign upcoming = false %}
+    {% assign recent = false %}
 
-      <h2>Recent events</h2>
+    {% for event in events %}
+      {% capture posttime %}{{ event.start | date: '%s' | plus: 0 }}{% endcapture %}
+      {% assign timediff = nowunix | minus: posttime %}
+      {% if timediff <= 0 %}{% assign upcoming = true %}{% endif %}
+      {% if timediff < timeout and timediff > 0 %}{% assign recent = true %}{% endif %}
+      {% if timediff > timeout %}{% assign past = true %}{% endif %}
+    {% endfor %}
 
-    </div>
+    {% if upcoming %}
+      <div class="row text-row">
+        <div class="col-xs-12 center-block text-col">
+          <h2>Upcoming events</h2>
+        </div>
+      </div>
+      {% for event in events | limit: 3 %}
+        {% capture posttime %}{{ event.start | date: '%s' | plus: 0 }}{% endcapture %}
+        {% assign timediff = nowunix | minus: posttime %}
+        {% if timediff <= 0 %}
+        <div class="row text-row">
+          {% if event.thumbnail %}
+            <div class="col-sm-9 pull-right restore-padding">
+              <h4 class="media-heading link-noglpyh">
+                <a href="{{ event.permalink }}">
+                  {{ event.title }}
+                </a>
+              </h4>
+              <span class="event-meta">{{ event.start | date: "%b %-d, %Y" }}{% if event.times %} • {{ event.times }}{% endif %}{% if event.location %} • <a href="{{ event.gm-link }}" title="Google Maps">{{ event.location }}</a>{% endif %}</span>
+            </div>
+
+            <div class="col-sm-3 pull-left link-unstyled">
+              <a href="{{ event.permalink }}">
+                <img src="{{ event.thumbnail }}" alt="Flyer for {{ event.title }}" width="100%">
+              </a>
+            </div>
+
+            <div class="col-sm-9 pull-right restore-padding">
+              <p>{{ event.excerpt | strip_html }}<p>
+            </div>
+          {% else %}
+          <div class="col-sm-12">
+            <h4 class="media-heading link-noglpyh">
+              <a href="{{ event.permalink }}">
+                {{ event.title }}
+              </a>
+            </h4>
+            <span class="event-meta">{{ event.start | date: "%b %-d, %Y" }}{% if event.times %} • {{ event.times }}{% endif %}{% if event.location %} • <a href="{{ event.gm-link }}" title="Google Maps">{{ event.location }}</a>{% endif %}</span>
+          </div>
+
+          <div class="col-sm-12">
+            <p>{{ event.excerpt | strip_html }}<p>
+          </div>
+          {% endif %}
+        </div>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if recent %}
+      <div class="row text-row">
+        <div class="col-xs-12 center-block text-col">
+          <h2>Recent events</h2>
+        </div>
+      </div>
+      {% for event in events | limit: 1 %}
+        {% capture posttime %}{{ event.start | date: '%s' | plus: 0 }}{% endcapture %}
+        {% assign timediff = nowunix | minus: posttime %}
+        {% if timediff < timeout and timediff > 0 %}
+        <div class="row text-row">
+          {% if event.thumbnail %}
+            <div class="col-sm-9 pull-right restore-padding">
+              <h4 class="media-heading link-noglpyh">
+                <a href="{{ event.permalink }}">
+                  {{ event.title }}
+                </a>
+              </h4>
+              <span class="event-meta">{{ event.start | date: "%b %-d, %Y" }}{% if event.times %} • {{ event.times }}{% endif %}{% if event.location %} • <a href="{{ event.gm-link }}" title="Google Maps">{{ event.location }}</a>{% endif %}</span>
+            </div>
+
+            <div class="col-sm-3 pull-left link-unstyled">
+              <a href="{{ event.permalink }}">
+                <img src="{{ event.thumbnail }}" alt="Flyer for {{ event.title }}" width="100%">
+              </a>
+            </div>
+
+            <div class="col-sm-9 pull-right restore-padding">
+              <p>{{ event.excerpt | strip_html }}<p>
+            </div>
+          {% else %}
+          <div class="col-sm-12">
+            <h4 class="media-heading link-noglpyh">
+              <a href="{{ event.permalink }}">
+                {{ event.title }}
+              </a>
+            </h4>
+            <span class="event-meta">{{ event.start | date: "%b %-d, %Y" }}{% if event.times %} • {{ event.times }}{% endif %}{% if event.location %} • <a href="{{ event.gm-link }}" title="Google Maps">{{ event.location }}</a>{% endif %}</span>
+          </div>
+
+          <div class="col-sm-12">
+            <p>{{ event.excerpt | strip_html }}<p>
+          </div>
+          {% endif %}
+        </div>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% unless upcoming or recent %}
+      {% if past %}
+        <div class="row text-row">
+          <div class="col-xs-12 center-block text-col">
+            <h2>Past events</h2>
+          </div>
+        </div>
+        {% for event in events %}
+          {% capture posttime %}{{ event.start | date: '%s' | plus: 0 }}{% endcapture %}
+          {% assign timediff = nowunix | minus: posttime %}
+          {% if timediff > timeout %}
+          <div class="row text-row">
+            {% if event.thumbnail %}
+              <div class="col-sm-9 pull-right restore-padding">
+                <h4 class="media-heading link-noglpyh">
+                  <a href="{{ event.permalink }}">
+                    {{ event.title }}
+                  </a>
+                </h4>
+                <span class="event-meta">{{ event.start | date: "%b %-d, %Y" }}{% if event.times %} • {{ event.times }}{% endif %}{% if event.location %} • <a href="{{ event.gm-link }}" title="Google Maps">{{ event.location }}</a>{% endif %}</span>
+              </div>
+
+              <div class="col-sm-3 pull-left link-unstyled">
+                <a href="{{ event.permalink }}">
+                  <img src="{{ event.thumbnail }}" alt="Flyer for {{ event.title }}" width="100%">
+                </a>
+              </div>
+
+              <div class="col-sm-9 pull-right restore-padding">
+                <p>{{ event.excerpt | strip_html }}<p>
+              </div>
+            {% else %}
+            <div class="col-sm-12">
+              <h4 class="media-heading link-noglpyh">
+                <a href="{{ event.permalink }}">
+                  {{ event.title }}
+                </a>
+              </h4>
+              <span class="event-meta">{{ event.start | date: "%b %-d, %Y" }}{% if event.times %} • {{ event.times }}{% endif %}{% if event.location %} • <a href="{{ event.gm-link }}" title="Google Maps">{{ event.location }}</a>{% endif %}</span>
+            </div>
+
+            <div class="col-sm-12">
+              <p>{{ event.excerpt | strip_html }}<p>
+            </div>
+            {% endif %}
+          </div>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endunless %}
+
   </div>
 
-
-  <div class="row text-row-wide">
-
-    <div class="col-sm-9 pull-right restore-padding">
-      <h4 class="media-heading link-noglpyh">
-        <a href="/events/2015/walk-with-you.html">
-          May 2015 justice evening:
-        </a>
-      </h4>
-      <h5 class="media-heading link-noglpyh">
-        <a href="/events/2015/walk-with-you.html">
-          We'll walk with you: The stories behind arriving in Australia
-        </a>
-      </h5>
-      <h6 class="link-noglpyh">
-        13 May 2015, <a href="http://www.google.com.au/maps/place/29+Young+St,+Fitzroy+VIC+3065" title="Google Maps">Mercy Theatre, ACU</a>
-      </h6>
-    </div>
-
-    <div class="col-sm-3 pull-left link-unstyled">
-      <a href="/events/2015/walk-with-you.html">
-        <img src="/images/2015/YMLFlyer_May2015_webSmall.jpg" alt="Flyer for May 2015 social justice evening" width="100%">
-      </a>
-    </div>
-
-    <div class="col-sm-9 pull-right restore-padding">
-      <p>
-        Hear what it’s like to arrive in Australia as an asylum seeker or refugee
-        trying to start a new life, and how you can make a difference. With guest
-        speakers from the Asylum Seekers Resource Centre.
-      <p>
-    </div>
-
-    </div>
-
-  </div>
+<!-- Facebook JavaScript SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
