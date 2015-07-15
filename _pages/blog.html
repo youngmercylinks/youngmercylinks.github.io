@@ -12,7 +12,7 @@ permalink: /blog.html
       <h2>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
-      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 50 }}&hellip; (<a href="{{ post.url }}">Read More</a>)</p>
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 50 }} (<a href="{{ post.url }}">Read More</a>)</p>
     </li>
     {% endfor %}
   </ul>
