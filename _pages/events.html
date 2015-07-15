@@ -117,7 +117,7 @@ permalink: /events.html
     {% endfor %}
   {% endif %}
 
-  {% if past == true %}
+  {% if past %}
     <div class="row text-row">
       <div class="col-xs-12 center-block text-col">
         <h2>Past events</h2>
@@ -167,14 +167,14 @@ permalink: /events.html
   {% endif %}
 </ul>
 
-{% if upcoming == false and recent == false and past == false %}
+{% unless upcoming or recent or past %}
 <div align="center" style="margin-bottom: 25px; color: #7c87c8;">
   <p>
     <h2 class="gf-montserrat text-shadow">No events to show</h2>
     <h3 class="gf-montserrat text-shadow">Please check back later.</h3>
   </p>
 </div>
-{% endif %}
+{% endunless %}
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
