@@ -23,7 +23,11 @@ permalink: '/blog/:year/:month/:title.html'
 relative_permalinks: false
 excerpt_separator: "<!-- more -->"
 
+<<<<<<< HEAD
 exclude: ['CNAME', 'Gemfile*', 'exclude', 'README.md', 'LICENCE.txt']
+=======
+exclude: ['CNAME', 'Gemfile*', 'exclude', 'README.md', 'LICENCE.txt', '_pages/members.html',  '_pages/mission.html', '_event_drafts']
+>>>>>>> master
 
 collections:
   events:
