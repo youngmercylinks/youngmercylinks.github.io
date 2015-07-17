@@ -1,0 +1,70 @@
+########## SOCIAL MEDIA ##########
+# All our own social media links
+## FACEBOOK
+facebook:
+  page: https://www.facebook.com/youngmercylinks
+  group: https://www.facebook.com/groups/101289776630175/
+  events:
+    all: https://www.facebook.com/youngmercylinks/events
+    2015:
+      walk-with-you: https://www.facebook.com/events/741845572598853/
+
+## GOOGLE PLUS
+google+:
+  profile:
+
+## TWITTER
+twitter:
+  feed:
+
+## FLICKR
+flickr:
+  profile:
+
+## INSTAGRAM
+instagram:
+  profile:
+
+## YOUTUBE
+youtube:
+  channel:
+  videos:
+    2015:
+
+## GITHUB
+github:
+  organisation: http://github.com/youngmercylinks
+  repos:
+    website: http://github.com/youngmercylinks/youngmercylinks.github.io
+
+
+########## PARTNER ORGANISATIONS ##########
+# Organisations that we work/volunteer with
+orgs:
+  svdp: # St. Vincent de Paul
+    main:
+  ercrs:  # Edmund Rice Community and Refugee Services
+    main: http://www.ercrs.com.au/
+  asrc: # Asylum Seeker's Resource Centre
+    main: http://www.asrc.org.au/
+  amnesty: # Amnesty Internation Australia
+    AU: # Australia
+      main: http://www.amnesty.org.au/refugees/
+
+
+########## MERCY GROUPS ##########
+# Any other groups or organisations that are Mercy-affiliated
+ismapng:
+  main: http://institute.mercy.org.au
+
+## YML ANALOGUES
+bam: # Brisbane Action for Mercy
+  main: http://www.brisbanemercy.org.au/mercy-in-action/brisbane-action-for-mercy/
+
+magnet: # Mercy Action Group Network
+  main: http://www.parramattamercy.org.au/be-involved/magnet
+  facebook: https://www.facebook.com/MAGnetSydney
+
+
+########## EVENT PAGES ##########
+# Keep this section at the bottom of the page, add events by year in descending order

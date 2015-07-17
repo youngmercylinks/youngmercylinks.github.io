@@ -1,0 +1,108 @@
+coordinator:
+  generic: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:pbbeqvangbe@lzy.bet.nh\" >Pbbeqvangbe</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@rotanidrooc</span></noscript></span>
+  first: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:pbbeqvangbe@lzy.bet.nh\" >Oreanqrggr</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@rotanidrooc</span></noscript></span>
+  full: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:pbbeqvangbe@lzy.bet.nh\" >Oreanqrggr Vazna</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@rotanidrooc</span></noscript></span>
+  address: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:pbbeqvangbe@lzy.bet.nh\" >pbbeqvangbe@lzy.bet.nh</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@rotanidrooc</span></noscript></span>
+bernadette:
+  full: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:oreanqrggr@lzy.bet.nh\" gnetrg=\"_oynax\">Oreanqrggr Vazna</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@ettedanreb</span></noscript></span>
+  first: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:oreanqrggr@lzy.bet.nh\" gnetrg=\"_oynax\">Oreanqrggr</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@ettedanreb</span></noscript></span>
+  address: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:oreanqrggr@lzy.bet.nh\" gnetrg=\"_oynax\">oreanqrggr@lzy.bet.nh</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@ettedanreb</span></noscript></span>
+marg:
+  full: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:znet@lzy.bet.nh\" gnetrg=\"_oynax\">Znet Zbber</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@gram</span></noscript></span>
+  first: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:znet@lzy.bet.nh\" gnetrg=\"_oynax\">Znet</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@gram</span></noscript></span>
+  address: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:znet@lzy.bet.nh\" gnetrg=\"_oynax\">znet@lzy.bet.nh</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@gram</span></noscript></span>
+nathan:
+  full: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:anguna@lzy.bet.nh\" >Anguna Crvepr</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@nahtan</span></noscript></span>
+  first: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:anguna@lzy.bet.nh\" >Anguna</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@nahtan</span></noscript></span>
+  address: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:anguna@lzy.bet.nh\" >anguna@lzy.bet.nh</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@nahtan</span></noscript></span>
+adrian:
+  full: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:nqevna@lzy.bet.nh\" >Nqevna Qrmbeqv</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@nairda</span></noscript></span>
+  first: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:nqevna@lzy.bet.nh\" >Nqevna</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@nairda</span></noscript></span>
+  address: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:nqevna@lzy.bet.nh\" >nqevna@lzy.bet.nh</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@nairda</span></noscript></span>
+mairead:
+  full: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:znvernq@lzy.bet.nh\" >Znvernq Xraarql</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@daeriam</span></noscript></span>
+  first: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:znvernq@lzy.bet.nh\" >Znvernq</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@daeriam</span></noscript></span>
+  address: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:znvernq@lzy.bet.nh\" >znvernq@lzy.bet.nh</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@daeriam</span></noscript></span>
+adria:
+  full: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:nqevn@lzy.bet.nh\" >Nqevn Qr Snmvb</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@airda</span></noscript></span>
+  first: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:nqevn@lzy.bet.nh\" >Nqevn</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@airda</span></noscript></span>
+  address: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:nqevn@lzy.bet.nh\" >nqevn@lzy.bet.nh</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@airda</span></noscript></span>
+rachel:
+  full: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:enpury@lzy.bet.nh\" >Enpury Cevapr</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@lehcar</span></noscript></span>
+  first: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:enpury@lzy.bet.nh\" >Enpury</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@lehcar</span></noscript></span>
+  address: >
+    <!-- Code from Florian Bersier's ROT13 email obfuscator (http://rot13.florianbersier.com) -->
+    <span id="obf" style="word-wrap: break-word;"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:enpury@lzy.bet.nh\" >enpury@lzy.bet.nh</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+    <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">ua.gro.lmy@lehcar</span></noscript></span>

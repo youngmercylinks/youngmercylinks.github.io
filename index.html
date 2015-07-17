@@ -35,7 +35,7 @@ layout: default
     {% endfor %}
 
     {% if upcoming %}
-      <div class="row text-row">
+      <div class="row text-row-wide">
         <div class="col-xs-12 center-block text-col">
           <h2>Upcoming events</h2>
         </div>
@@ -44,7 +44,7 @@ layout: default
         {% capture posttime %}{{ event.start | date: '%s' | plus: 0 }}{% endcapture %}
         {% assign timediff = nowunix | minus: posttime %}
         {% if timediff <= 0 %}
-        <div class="row text-row">
+        <div class="row text-row-wide">
           {% if event.thumbnail %}
             <div class="col-sm-9 pull-right restore-padding">
               <h4 class="media-heading link-noglpyh">
@@ -84,7 +84,7 @@ layout: default
     {% endif %}
 
     {% if recent %}
-      <div class="row text-row">
+      <div class="row text-row-wide">
         <div class="col-xs-12 center-block text-col">
           <h2>Recent events</h2>
         </div>
@@ -93,7 +93,7 @@ layout: default
         {% capture posttime %}{{ event.start | date: '%s' | plus: 0 }}{% endcapture %}
         {% assign timediff = nowunix | minus: posttime %}
         {% if timediff < timeout and timediff > 0 %}
-        <div class="row text-row">
+        <div class="row text-row-wide">
           {% if event.thumbnail %}
             <div class="col-sm-9 pull-right restore-padding">
               <h4 class="media-heading link-noglpyh">
@@ -134,7 +134,7 @@ layout: default
 
     {% unless upcoming or recent %}
       {% if past %}
-        <div class="row text-row">
+        <div class="row text-row-wide">
           <div class="col-xs-12 center-block text-col">
             <h2>Past events</h2>
           </div>
@@ -143,7 +143,7 @@ layout: default
           {% capture posttime %}{{ event.start | date: '%s' | plus: 0 }}{% endcapture %}
           {% assign timediff = nowunix | minus: posttime %}
           {% if timediff > timeout %}
-          <div class="row text-row">
+          <div class="row text-row-wide">
             {% if event.thumbnail %}
               <div class="col-sm-9 pull-right restore-padding">
                 <h4 class="media-heading link-noglpyh">
