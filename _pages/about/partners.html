@@ -1,0 +1,19 @@
+---
+layout: subpages-about
+maintitle: About YML
+title: Causes we work on
+permalink: /about/partners.html
+---
+{% include construction.html %}
+
+<ul class="post-list">
+  {% for partner in site.data.partners %}
+  <li>
+    <h2>
+      <a class="post-link" href="{{ partner.url }}">{{ partner.name }}</a>
+    </h2>
+    <p class="post-excerpt">{{ partner.blurb }}</p>
+  </li>
+  {% endfor %}
+</ul>
+

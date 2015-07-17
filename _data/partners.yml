@@ -1,0 +1,20 @@
+- svdp:
+  name: St. Vincent de Paul
+  url: {{ site.data.links.orgs.svdp.main }}
+  blurb: >
+    A description
+- mcauley:
+  name: Macauley House
+  url: {{ site.data.links.orgs.macauley.main }}
+  blurb: >
+    A blurb about Regina Coeli
+- atherton:
+  name: Atherton Gardens Homework Program
+  url: {{ site.data.links.orgs.atherton.main }}
+  blurb: >
+    A blurb about the homework program
+- asrc:
+  name: Asylum Seekers Resource Centre
+  url: {{ site.data.links.orgs.asrc.main }}
+  blurb: >
+    A blurb about ASRC
