@@ -52,6 +52,18 @@
   margin-bottom: 5px;
 }
 
+// Reset margins on member headings for looser spacing
+.member-heading {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+// Reset margins on member subheadings for looser spacing
+.member-subheading {
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
 // Media list variation
 //
 // Undo default ul/ol styles

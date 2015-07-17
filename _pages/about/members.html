@@ -1,0 +1,60 @@
+---
+layout: subpages-about
+maintitle: About YML
+title: Our Members
+permalink: /about/members.html
+---
+{% include construction.html %}
+
+<h2>Members</h2>
+These are some of our members
+</div>
+</div>
+
+{% for member in site.data.members %}
+{% if member.type == "member" %}
+<div class="text-row">
+  {% if member.photo %}
+  <div class="col-xs-12 col-sm-3 restore-padding">
+    <img src="{{ member.photo }}">
+  </div>
+  <div class="col-xs-12 col-sm-9 pull-left">
+  {% else %}
+  <div class="col-xs-12 col-sm-12">
+  {% endif %}
+    <h4 class="member-heading">{{ member.name }}</h4>
+    <h5 class="member-subheading">{{ member.position}} {{ member.start }}{% if member.end %}&ndash;{{ member.end }}{% endif %}</h5>
+    <p>{{ member.bio }}</p>
+  </div>
+</div>
+{% endif %}
+{% endfor %}
+
+<div class="text-row">
+  <div class="col-xs-12">
+    <h2>Admin</h2>
+    These are some of our members
+  </div>
+</div>
+
+{% for member in site.data.members %}
+{% if member.type == "admin" %}
+<div class="text-row">
+  {% if member.photo %}
+  <div class="col-xs-12 col-sm-3 restore-padding">
+    <img src="{{ member.photo }}">
+  </div>
+  <div class="col-xs-12 col-sm-9 pull-left">
+  {% else %}
+  <div class="col-xs-12 col-sm-12">
+  {% endif %}
+    <h4 class="member-heading">{{ member.name }}</h4>
+    <h5 class="member-subheading">{{ member.position}} {{ member.start }}{% if member.end %}&ndash;{{ member.end }}{% endif %}</h5>
+    <p>{{ member.bio }}</p>
+  </div>
+</div>
+{% endif %}
+{% endfor %}
+
+<div class="row text-row">
+  <div class="col-xs-12">

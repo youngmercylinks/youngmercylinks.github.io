@@ -1,23 +1,69 @@
 - shortname: bernadette
   name: Bernadette Inman
+  type: admin
   position: Coordinator
-  date: 2014--present
-  photo: /images/members/bernadette.jpg
+  start: 2014
+  end: present
+  # photo: /images/members/bernadette.jpg
   bio: >
     Bernadette is a great coordinator.
 
+- shortname: marg
+  name: Sr. Marg Moore
+  type: admin
+  position:
+  start: 2005
+  end: present
+  # photo: /images/members/marg.jpg
+  bio: >
+    Marg is a nun.
+
 - shortname: mairead
   name: Mairead Kennedy
+  type: member
   position: Joined
-  date: ages ago
-  photo: /images/members/mairead.jpg
+  start: ages ago
+  end:
+  # photo: /images/members/mairead.jpg
   bio: >
     Mairead is the real deal.
 
 - shortname: adria
   name: Adria De Fazio
+  type: member
   position: Joined
-  date: 2011
-  photo: /images/members/adria.jpg
+  start: 2011
+  end:
+  # photo: /images/members/adria.jpg
   bio: >
     She got to go to Dublin this one time, she’s that good.
+
+- shortname: rachel
+  name: Rachel Prince
+  type: member
+  position: Joined
+  start: 2011
+  end:
+  # photo: /images/members/rachel.jpg
+  bio: >
+    She got to go to Dublin this one time, she’s that good.
+
+- shortname: adrian
+  name: Adrian Dezordi
+  type: member
+  position: Joined
+  start: 2013
+  end:
+  # photo: /images/members/adrian.jpg
+  bio: >
+    Adrian's really good with computers.
+
+- shortname: bradley
+  name: Bradley Jackson
+  type: member
+  position: Joined
+  start: 2012
+  end:
+  # photo: /images/members/bradley.jpg
+  bio: >
+    Bradley is pretty good at programming.
