@@ -50,6 +50,8 @@ orgs:
   amnesty: # Amnesty Internation Australia
     AU: # Australia
       main: http://www.amnesty.org.au/refugees/
+  tallgiraffe: # The Tall Giraffe
+    main: http://www.thetallgiraffe.org
 
 
 ########## MERCY GROUPS ##########

@@ -4,7 +4,7 @@ maintitle: Contact
 title: Other Groups
 permalink: /contact/othergroups.html
 ---
-You can find other Mercy young adult networks here:
+<!-- You can find other Mercy young adult networks here: -->
 
 ### MAGnet
 The **Mercy Action Group Network** (MAGnet) is a Sydney-based group of young
@@ -18,3 +18,6 @@ BAM is a group consisting largely of
 (but not exclusively for) post-secondary school students who, in a spirit of
 Mercy, wish to connect with the marginalised of Brisbane. Find them
 [here]({{ site.data.links.bam.main }})
+
+### The Tall Giraffe
+The Tall Giraffe is a community of young people who educates and mobilises others to inspire positive social change. Find them [here]({{ site.data.links.orgs.tallgiraffe.main }})
