@@ -42,7 +42,7 @@ github:
 # Organisations that we work/volunteer with
 orgs:
   svdp: # St. Vincent de Paul
-    main:
+    main: https://www.vinnies.org.au
   ercrs:  # Edmund Rice Community and Refugee Services
     main: http://www.ercrs.com.au/
   asrc: # Asylum Seeker's Resource Centre
