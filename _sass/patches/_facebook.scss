@@ -1,0 +1,15 @@
+$fb-like-background: lighten($body-bg, 15%);
+
+.fb-like {
+
+  span {
+    background-color: $fb-like-background;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: $fb-like-background;
+    border-width: 10px;
+    vertical-align: middle !important;
+    height: 40px !important;
+    // width: 370px !important;
+  }
+}
