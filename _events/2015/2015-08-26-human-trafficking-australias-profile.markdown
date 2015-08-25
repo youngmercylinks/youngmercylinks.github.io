@@ -24,7 +24,7 @@ Join us to hear from guest speakers, Carole McDonald RSM, Nick Saviadis from Eti
 
 26 August 2015, 5pm to 8pm, Mercy lecture theatre, ACU, 29 Young St. Fitzroy.
 
-There will be a Q&A style panel discussion so please feel free to get involved, you can start tweeting questions for our speakers to [@youngmercylinks](https://twitter.com/youngmercylinks)
+There will be a Q&A style panel discussion so please feel free to get involved, you can start tweeting questions for our speakers to [@mercy_links](https://twitter.com/mercy_links)
 
 [Check it out on Facebook!](https://www.facebook.com/events/841626455886851/)
 
@@ -37,17 +37,3 @@ There will be a Q&A style panel discussion so please feel free to get involved, 
 - [Ethical Clothing Australia](http://www.ethicalclothingaustralia.org.au/)
 - [Fairtrade Australia & New Zealand](http://fairtrade.com.au)
 
-
-{% comment %}
-### Programme:
-
-Time   | Event
--------|-------------
-5:30pm | Introduction
-5:46pm | Presentation from the Asylum Seekers Resource Centre
-6:18pm | Short break
-6:23pm | Presentation from Edmund Rice Community & Refugee Services
-6:50pm | Presentation from WhyICare
-7:05pm | Actions you can take
-7:20pm | Wrap-up
-{% endcomment %}
