@@ -1,6 +1,5 @@
 ---
 layout: page
-maintitle: About YML
 title: "We'll walk with you"
 permalink: /links/events/2015/walk-with-you.html
 redirect_from:
