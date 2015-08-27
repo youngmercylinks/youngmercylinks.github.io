@@ -31,7 +31,6 @@ layout: default
       {% assign timediff = nowunix | minus: posttime %}
       {% if timediff <= 0 %}{% assign upcoming = true %}{% endif %}
       {% if timediff < timeout and timediff > 0 %}{% assign recent = true %}{% endif %}
-      {% if timediff > timeout %}{% assign past = true %}{% endif %}
     {% endfor %}
 
     {% if upcoming %}
@@ -89,7 +88,7 @@ layout: default
           <h2>Recent events</h2>
         </div>
       </div>
-      {% for event in events | limit: 1 %}
+      {% for event in events %}
         {% capture posttime %}{{ event.start | date: '%s' | plus: 0 }}{% endcapture %}
         {% assign timediff = nowunix | minus: posttime %}
         {% if timediff < timeout and timediff > 0 %}
@@ -128,6 +127,7 @@ layout: default
           </div>
           {% endif %}
         </div>
+        {% break %}
         {% endif %}
       {% endfor %}
     {% endif %}
