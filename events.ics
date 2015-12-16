@@ -1,0 +1,45 @@
+---
+layout: null
+---
+BEGIN:VCALENDAR
+CALSCALE:GREGORIAN
+VERSION:2.0
+METHOD:PUBLISH
+PRODID:-//yml.org.au//Jekyll v{{ jekyll.version }}//EN
+BEGIN:VTIMEZONE
+TZID:Australia/Melbourne
+BEGIN:STANDARD
+TZOFFSETFROM:+1100
+RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU
+DTSTART:20080406T030000
+TZNAME:AEST
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+1000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU
+DTSTART:20081005T020000
+TZNAME:AEDT
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE{% assign events = site.events %}{% for event in events %}
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Australia/Melbourne:{{ event.start | date: "%Y%m%dT%H%M%S" }}
+UID:{{ event.url | remove_first: '/' | remove: '.html' | uri_escape }}@yml.org.au
+DTSTAMP:{% assign toffset = site.time | date: '%z' %}{{ toffset }}
+A {{ site.time | date: '%Y%m%dT' }}
+A1 {% assign timediff = site.time | date: '%::z' | split: ':' %}{% assign timediffhours = timediff[0] %}{% assign timediffmins = timediff[1] | times: 60%}{% assign timediffsecs = timediff[2] | times: 360%}
+B {% assign timestamp = site.time | date: '%H%M%S' %}{{timestamp}} {{ timestamp | size }}
+B1 {{ toffset }} {{ toffset.size }}
+C {% assign utctime = timestamp | minus: toffset %}{{ utctime }} {{ utctime.size }}
+C {% capture utctime %}{{ timestamp | minus: toffset }}{% endcapture %}{{ utctime }} {{ utctime.size }}
+C1 {% if utctime.size < 6 %}{% assign utctime = utctime | prepend: '0' %}{% endif %}{{ utctime }} {{ utctime.size }}
+D {{ site.time | date: '%Y%m%dT%H%M%S' }}
+DTSTART;TZID=Australia/Melbourne:{{ event.start | date: "%Y%m%dT%H%M%S" }}
+LOCATION:{{ event.location }}
+SUMMARY:Young Mercy Links: {{ event.title }}
+DESCRIPTION:{{ event.excerpt | strip_html | strip_newlines }}
+URL:{{ site.url | append: site.baseurl | append: event.url }}
+END:VEVENT{% endfor %}
+END:VCALENDAR
