@@ -5,169 +5,46 @@ permalink: /events.html
 ---
 <ul class="post-list">
   {% assign events = site.events %}
-  {% capture nowunix %}{{ 'now' | date: '%s' | plus: 0 }}{% endcapture %}
-  {% assign timeout = 604800 %}
-  {% assign upcoming = false %}
-  {% assign recent = false %}
-  {% assign past = false %}
-
   {% for event in events %}
-    {% capture posttime %}{{ event.start | date: '%s' | plus: 0 }}{% endcapture %}
-    {% assign timediff = nowunix | minus: posttime %}
-    {% if timediff <= 0 %}{% assign upcoming = true %}{% endif %}
-    {% if timediff < timeout and timediff > 0 %}{% assign recent = true %}{% endif %}
-    {% if timediff > timeout %}{% assign past = true %}{% endif %}
+    <div class="row text-row-wide">
+      {% if event.thumbnail %}
+        <div class="col-sm-9 pull-right restore-padding">
+          <h4 class="media-heading link-noglpyh">
+            <a href="{{ event.permalink }}">
+              {{ event.title }}
+            </a>
+          </h4>
+          <span class="event-meta">{{ event.start | date: "%b %-d, %Y" }}{% if event.times %} • {{ event.times }}{% endif %}{% if event.location %} • <a href="{{ event.gm-link }}" title="Google Maps">{{ event.location }}</a>{% endif %}</span>
+        </div>
+
+        <div class="col-sm-3 pull-left link-unstyled">
+          <a href="{{ event.permalink }}">
+            <img src="{{ event.thumbnail }}" alt="Flyer for {{ event.title }}" width="100%">
+          </a>
+        </div>
+
+        <div class="col-sm-9 pull-right restore-padding">
+          <p>{{ event.excerpt | strip_html }}<p>
+        </div>
+      {% else %}
+      <div class="col-sm-12">
+        <h4 class="media-heading link-noglpyh">
+          <a href="{{ event.permalink }}">
+            {{ event.title }}
+          </a>
+        </h4>
+        <span class="event-meta">{{ event.start | date: "%b %-d, %Y" }}{% if event.times %} • {{ event.times }}{% endif %}{% if event.location %} • <a href="{{ event.gm-link }}" title="Google Maps">{{ event.location }}</a>{% endif %}</span>
+      </div>
+
+      <div class="col-sm-12">
+        <p>{{ event.excerpt | strip_html }}<p>
+      </div>
+      {% endif %}
+    </div>
   {% endfor %}
-
-  {% if upcoming == true %}
-    <div class="row text-row-wide">
-      <div class="col-xs-12 center-block text-col">
-        <h2>Upcoming events</h2>
-      </div>
-    </div>
-    {% for event in events %}
-      {% capture posttime %}{{ event.start | date: '%s' | plus: 0 }}{% endcapture %}
-      {% assign timediff = nowunix | minus: posttime %}
-      {% if timediff <= 0 %}
-      <div class="row text-row-wide">
-        {% if event.thumbnail %}
-          <div class="col-sm-9 pull-right restore-padding">
-            <h4 class="media-heading link-noglpyh">
-              <a href="{{ event.permalink }}">
-                {{ event.title }}
-              </a>
-            </h4>
-            <span class="event-meta">{{ event.start | date: "%b %-d, %Y" }}{% if event.times %} • {{ event.times }}{% endif %}{% if event.location %} • <a href="{{ event.gm-link }}" title="Google Maps">{{ event.location }}</a>{% endif %}</span>
-          </div>
-
-          <div class="col-sm-3 pull-left link-unstyled">
-            <a href="{{ event.permalink }}">
-              <img src="{{ event.thumbnail }}" alt="Flyer for {{ event.title }}" width="100%">
-            </a>
-          </div>
-
-          <div class="col-sm-9 pull-right restore-padding">
-            <p>{{ event.excerpt | strip_html }}<p>
-          </div>
-        {% else %}
-        <div class="col-sm-12">
-          <h4 class="media-heading link-noglpyh">
-            <a href="{{ event.permalink }}">
-              {{ event.title }}
-            </a>
-          </h4>
-          <span class="event-meta">{{ event.start | date: "%b %-d, %Y" }}{% if event.times %} • {{ event.times }}{% endif %}{% if event.location %} • <a href="{{ event.gm-link }}" title="Google Maps">{{ event.location }}</a>{% endif %}</span>
-        </div>
-
-        <div class="col-sm-12">
-          <p>{{ event.excerpt | strip_html }}<p>
-        </div>
-        {% endif %}
-      </div>
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-
-  {% if recent == true %}
-    <div class="row text-row-wide">
-      <div class="col-xs-12 center-block text-col">
-        <h2>Recent events</h2>
-      </div>
-    </div>
-    {% for event in events %}
-      {% capture posttime %}{{ event.start | date: '%s' | plus: 0 }}{% endcapture %}
-      {% assign timediff = nowunix | minus: posttime %}
-      {% if timediff < timeout and timediff > 0 %}
-      <div class="row text-row-wide">
-        {% if event.thumbnail %}
-          <div class="col-sm-9 pull-right restore-padding">
-            <h4 class="media-heading link-noglpyh">
-              <a href="{{ event.permalink }}">
-                {{ event.title }}
-              </a>
-            </h4>
-            <span class="event-meta">{{ event.start | date: "%b %-d, %Y" }}{% if event.times %} • {{ event.times }}{% endif %}{% if event.location %} • <a href="{{ event.gm-link }}" title="Google Maps">{{ event.location }}</a>{% endif %}</span>
-          </div>
-
-          <div class="col-sm-3 pull-left link-unstyled">
-            <a href="{{ event.permalink }}">
-              <img src="{{ event.thumbnail }}" alt="Flyer for {{ event.title }}" width="100%">
-            </a>
-          </div>
-
-          <div class="col-sm-9 pull-right restore-padding">
-            <p>{{ event.excerpt | strip_html }}<p>
-          </div>
-        {% else %}
-        <div class="col-sm-12">
-          <h4 class="media-heading link-noglpyh">
-            <a href="{{ event.permalink }}">
-              {{ event.title }}
-            </a>
-          </h4>
-          <span class="event-meta">{{ event.start | date: "%b %-d, %Y" }}{% if event.times %} • {{ event.times }}{% endif %}{% if event.location %} • <a href="{{ event.gm-link }}" title="Google Maps">{{ event.location }}</a>{% endif %}</span>
-        </div>
-
-        <div class="col-sm-12">
-          <p>{{ event.excerpt | strip_html }}<p>
-        </div>
-        {% endif %}
-      </div>
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-
-  {% if past %}
-    <div class="row text-row-wide">
-      <div class="col-xs-12 center-block text-col">
-        <h2>Past events</h2>
-      </div>
-    </div>
-    {% for event in events %}
-      {% capture posttime %}{{ event.start | date: '%s' | plus: 0 }}{% endcapture %}
-      {% assign timediff = nowunix | minus: posttime %}
-      {% if timediff > timeout %}
-      <div class="row text-row-wide">
-        {% if event.thumbnail %}
-          <div class="col-sm-9 pull-right restore-padding">
-            <h4 class="media-heading link-noglpyh">
-              <a href="{{ event.permalink }}">
-                {{ event.title }}
-              </a>
-            </h4>
-            <span class="event-meta">{{ event.start | date: "%b %-d, %Y" }}{% if event.times %} • {{ event.times }}{% endif %}{% if event.location %} • <a href="{{ event.gm-link }}" title="Google Maps">{{ event.location }}</a>{% endif %}</span>
-          </div>
-
-          <div class="col-sm-3 pull-left link-unstyled">
-            <a href="{{ event.permalink }}">
-              <img src="{{ event.thumbnail }}" alt="Flyer for {{ event.title }}" width="100%">
-            </a>
-          </div>
-
-          <div class="col-sm-9 pull-right restore-padding">
-            <p>{{ event.excerpt | strip_html }}<p>
-          </div>
-        {% else %}
-        <div class="col-sm-12">
-          <h4 class="media-heading link-noglpyh">
-            <a href="{{ event.permalink }}">
-              {{ event.title }}
-            </a>
-          </h4>
-          <span class="event-meta">{{ event.start | date: "%b %-d, %Y" }}{% if event.times %} • {{ event.times }}{% endif %}{% if event.location %} • <a href="{{ event.gm-link }}" title="Google Maps">{{ event.location }}</a>{% endif %}</span>
-        </div>
-
-        <div class="col-sm-12">
-          <p>{{ event.excerpt | strip_html }}<p>
-        </div>
-        {% endif %}
-      </div>
-      {% endif %}
-    {% endfor %}
-  {% endif %}
 </ul>
 
-{% unless upcoming or recent or past %}
+{% unless events %}
 <div align="center" style="margin-bottom: 25px; color: #7c87c8;">
   <p>
     <h2 class="gf-montserrat text-shadow">No events to show</h2>
