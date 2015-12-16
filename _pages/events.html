@@ -3,17 +3,17 @@ layout: default
 title: "Events"
 permalink: /events.html
 ---
-<ul class="post-list">
+<ul class="post-list" id="event-list">
   {% assign events = site.events %}
   {% for event in events %}
-    <div class="row text-row-wide">
+    <div class="row text-row-wide event-list__event">
       <div class="{% if event.thumbnail %}col-sm-9 pull-right restore-padding{% else %}col-sm-12{% endif %}">
         <h4 class="media-heading link-noglpyh">
           <a href="{{ event.permalink }}">
             {{ event.title }}
           </a>
         </h4>
-        <span class="event-meta">{{ event.start | date: "%b %-d, %Y" }}{% if event.times %} • {{ event.times }}{% endif %}{% if event.location %} • <a href="{{ event.gm-link }}" title="Google Maps">{{ event.location }}</a>{% endif %}</span>
+        <span class="event-meta"><span class="event__date--start" itemprop="startDate" content="{{ event.start | date_to_xmlschema }}">{{ event.start | date: "%B %-d, %Y" }}<span><span class="event__date--end" itemprop="endDate" content="{{ event.end | date_to_xmlschema }}"><span>{% if event.times %} • {{ event.times }}{% endif %}{% if event.location %} • <a href="{{ event.location.url }}" title="Google Maps">{{ event.location.name }}</a>{% endif %}</span>
       </div>
 
       {% if event.thumbnail %}

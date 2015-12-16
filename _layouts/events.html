@@ -3,10 +3,13 @@ layout: default
 ---
 <div class="container">
   <div class="row text-row-wide">
-    <div class="col-xs-12">
+    <div class="col-xs-12" itemscope itemtype="http://schema.org/Event">
 
-      <h1 class="post-title">{{ page.title }}</h1>
-      <p class="event-meta">{{ page.start | date: "%B %-d, %Y" }}{% if page.times %} • {{ page.times }}{% endif %}{% if page.location %} • <a href="{{ page.gm-link }}" title="Google Maps">{{ page.location }}</a>{% endif %}</p>
+      <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
+      <p class="event-meta"><span itemprop="startDate" content="{{ page.start | date_to_xmlschema }}">{{ page.start | date: "%B %-d, %Y" }}<span><span itemprop="endDate" content="{{ page.end | date_to_xmlschema }}"><span>{% if page.times %} • {{ page.times }}{% endif %}
+        {% if page.location %}<span itemprop="location" itemscope itemtype="http://schema.org/Place"> •
+          {% if page.location.url %}<a href="{{ page.location.url }}" title="Google Maps" itemprop="hasMap">{% endif %}{% if page.location.name %}<span itemprop="name">{{ page.location.name }}</span><span class="event--address" style:"display:none;" itemscope itemtype="http://schema.org/PostalAddress">(<span itemprop="streetAddress">{{ page.location.address.street | append: ', '}}</span><span itemprop="addressLocality">{{ page.location.address.locality  | append: ' ' }}</span><span itemprop="addressRegion">{{ page.location.address.region | append: ' ' }}</span><span itemprop="addressCountry">{{ page.location.address.country }}</span>)</span>{% endif %}{% if page.location.url %}</a>{% endif %}</span>
+        {% endif %}</p>
 
       {{ content }}
 
