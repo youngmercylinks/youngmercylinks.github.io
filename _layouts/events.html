@@ -13,6 +13,39 @@ layout: default
 
       {{ content }}
 
+      <div id='calendarDownloadLink'></div>
+
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  function download(filename, content) {
+    var theLink = document.createElement('a');
+    theLink.setAttribute('href', 'data:text/calendar;charset=utf-8,' + encodeURIComponent(content));
+    theLink.setAttribute('download', filename);
+
+    if (document.createEvent) {
+        var event = document.createEvent('MouseEvents');
+        event.initEvent('click', true, true);
+        theLink.dispatchEvent(event);
+    }
+    else {
+        theLink.click();
+    }
+  }
+
+  var calendarContent = 'This is some test content';
+
+  function calendarDownload(filename) {
+    var theDownloadLink = document.createElement('a');
+    theDownloadLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(calendarContent));
+    theDownloadLink.setAttribute('download', filename);
+    theDownloadLink.innerHTML = 'Add to your calendar';
+    document.getElementById('calendarDownloadLink').appendChild(theDownloadLink);
+  }
+
+  calendarDownload('{{ page.shorttitle }}');
+
+  // download('theCaltest.txt', 'Hello world!');
+</script>
