@@ -13,6 +13,8 @@ og:
     width: 1200
     height: 650
 
+calendar-location: events.ics
+
 # Build settings
 timezone: Australia/Melbourne
 markdown: kramdown

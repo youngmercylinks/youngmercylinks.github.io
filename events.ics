@@ -27,17 +27,9 @@ BEGIN:VEVENT
 TRANSP:OPAQUE
 DTEND;TZID=Australia/Melbourne:{{ event.start | date: "%Y%m%dT%H%M%S" }}
 UID:{{ event.url | remove_first: '/' | remove: '.html' | uri_escape }}@yml.org.au
-DTSTAMP:{% assign toffset = site.time | date: '%z' %}{{ toffset }}
-A {{ site.time | date: '%Y%m%dT' }}
-A1 {% assign timediff = site.time | date: '%::z' | split: ':' %}{% assign timediffhours = timediff[0] %}{% assign timediffmins = timediff[1] | times: 60%}{% assign timediffsecs = timediff[2] | times: 360%}
-B {% assign timestamp = site.time | date: '%H%M%S' %}{{timestamp}} {{ timestamp | size }}
-B1 {{ toffset }} {{ toffset.size }}
-C {% assign utctime = timestamp | minus: toffset %}{{ utctime }} {{ utctime.size }}
-C {% capture utctime %}{{ timestamp | minus: toffset }}{% endcapture %}{{ utctime }} {{ utctime.size }}
-C1 {% if utctime.size < 6 %}{% assign utctime = utctime | prepend: '0' %}{% endif %}{{ utctime }} {{ utctime.size }}
-D {{ site.time | date: '%Y%m%dT%H%M%S' }}
-DTSTART;TZID=Australia/Melbourne:{{ event.start | date: "%Y%m%dT%H%M%S" }}
-LOCATION:{{ event.location }}
+DTSTAMP:{% assign theoffsetArray = site.time | date: '%::z' | split: ':' %}{% assign theoffsetHour = theoffsetArray[0] | times: 3600 %}{% assign theoffsetMinute = theoffsetArray[1] | times: 60 %}{% assign theoffsetSecond = theoffsetArray[2] | times: 1 %}{% assign timeoffset = theoffsetHour | plus: theoffsetMinute | plus: theoffsetSecond %}{% assign utctime = site.time | date: '%s' | minus: timeoffset | date: '%Y%m%dT%H%M%S' %}{{ utctime | append: 'Z' }}
+DTSTART;TZID=Australia/Melbourne:{{ event.start | date: '%Y%m%dT%H%M%S' }}
+LOCATION:{{ event.location.name | append: ' ' }}{{ event.location.address.street | append: ' ' }}{{ event.location.address.locality | append: ' ' }}{{ event.location.address.region | append: ' ' }}{{ event.location.address.postcode | append: ' ' }}{{ event.location.address.country | append: ' ' }}
 SUMMARY:Young Mercy Links: {{ event.title }}
 DESCRIPTION:{{ event.excerpt | strip_html | strip_newlines }}
 URL:{{ site.url | append: site.baseurl | append: event.url }}
