@@ -21,7 +21,7 @@ markdown: kramdown
 sass:
   style: compressed
 
-include: ['_pages']
+include: ['_pages','_data-pages']
 permalink: '/blog/:year/:month/:title.html'
 relative_permalinks: false
 excerpt_separator: "<!-- more -->"

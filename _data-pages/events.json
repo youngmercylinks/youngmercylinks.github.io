@@ -1,0 +1,7 @@
+---
+layout: null
+permalink: events.json
+---
+var allEvents = [
+{% for event in site.events %}  {{ event | drop: "output" | jsonify }}{% unless forloop.last %},{% endunless %}
+{% endfor %}]
