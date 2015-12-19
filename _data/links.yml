@@ -15,25 +15,29 @@ google+:
 
 ## TWITTER
 twitter:
-  feed:
+  handle: mercy_links
+  prefix: '@'
+  link: https://twitter.com/mercy_links
 
 ## FLICKR
 flickr:
-  profile:
+  link:
 
 ## INSTAGRAM
 instagram:
-  profile:
+  handle:
+  prefix: '@'
+  link:
 
 ## YOUTUBE
 youtube:
-  channel:
+  link:
   videos:
     2015:
 
 ## GITHUB
 github:
-  organisation: http://github.com/youngmercylinks
+  link: http://github.com/youngmercylinks
   repos:
     website: http://github.com/youngmercylinks/youngmercylinks.github.io
 

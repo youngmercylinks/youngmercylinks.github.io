@@ -31,16 +31,17 @@ Join us to hear from guest speakers, Carole McDonald RSM, Nick Saviadis from Eti
 
 26 August 2015, 5pm to 8pm, Mercy lecture theatre, ACU, 29 Young St. Fitzroy.
 
-There will be a Q&A style panel discussion so please feel free to get involved, you can start tweeting questions for our speakers to [@mercy_links](https://twitter.com/mercy_links)
+There will be a Q&A style panel discussion so please feel free to get involved, you can start tweeting questions for our speakers to {% include social.html platform="twitter" %}
+
 
 [Check it out on Facebook!](https://www.facebook.com/events/841626455886851/)
 
 <img src="/images/2015/2015-08-26-stop-human-trafficking.jpg" width="100%"/>
 
 ### More information:
-- [ACRATH (Australian Catholic Religious Against Trafficking in Humans)](http://acrath.org.au/)
-- [STOP THE TRAFFIK](http://www.stopthetraffik.org/support-and-legal)
-- [Etiko](http://www.etiko.com.au)
-- [Ethical Clothing Australia](http://www.ethicalclothingaustralia.org.au/)
-- [Fairtrade Australia & New Zealand](http://fairtrade.com.au)
+- {% include extra-link.html name='acrath' %}
+- {% include extra-link.html name='stopthetraffik' %}
+- {% include extra-link.html name='etiko' %}
+- {% include extra-link.html name='ethicalclothingaustralia' %}
+- {% include extra-link.html name='fairtrade' %}
 

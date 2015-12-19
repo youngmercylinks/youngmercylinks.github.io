@@ -1,0 +1,1 @@
+<a href="{{ site.data.extra-links[include.name]url }}">{% unless include.text %}{{ site.data.extra-links[include.name]label }}{% else %}{{ include.text }}{% endunless %}</a>{% if site.data.extra-links[include.name]status == 'dead' %}<span class="small">(dead link)</span>{% endif %}

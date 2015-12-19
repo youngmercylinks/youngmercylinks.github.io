@@ -1,0 +1,1 @@
+<a href="{{ site.data.links[include.platform]link }}">{% unless include.text %}{{ site.data.links[include.platform]handle | prepend: site.data.links[include.platform]prefix }}{% else %}{{ include.text }}{% endunless %}</a>
