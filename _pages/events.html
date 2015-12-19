@@ -6,7 +6,7 @@ permalink: /events.html
 <ul class="post-list" id="event-list">
   {% assign events = site.events %}
   {% for event in events %}
-    <div class="row text-row-wide event-list__event">
+    <div class="row text-row-wide event-list__event"  itemscope itemtype="http://schema.org/Event">
       <div class="{% if event.thumbnail %}col-sm-9 pull-right restore-padding{% else %}col-sm-12{% endif %}">
         <h4 class="media-heading link-noglpyh">
           <a href="{{ event.permalink }}">
@@ -19,7 +19,7 @@ permalink: /events.html
       {% if event.thumbnail %}
       <div class="col-sm-3 pull-left link-unstyled">
         <a href="{{ event.permalink }}">
-          <img src="{{ event.thumbnail }}" alt="Flyer for {{ event.title }}" width="100%">
+          <img src="{{ event.thumbnail }}" alt="Flyer for {{ event.title }}" width="100%" itemprop="image">
         </a>
       </div>
       {% endif %}
@@ -57,5 +57,10 @@ permalink: /events.html
 </div>
 {% endif %}
 
+<div class="row text-row-wide">
+  <div class="col-sm-12">
+    <a class="btn btn-primary" href="{{ site.calendar-location | prepend: '/' }}" role="button"><i class="fa fa-calendar"></i><span style="padding-left:10px;">Subscribe to our events</span></a>
+  </div>
+</div>
 
 <script src="/js/event-group-by-date.js"></script>
