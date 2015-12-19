@@ -2,11 +2,18 @@
 layout: events
 title: "Human Trafficking: Australia's Profile"
 shorttitle: human-trafficking-australias-profile
-start: 2015-08-26 17:00:00
-end: 2015-08-26 20:00:00
+start: 2015-08-26 17:00:00+10:00
+end: 2015-08-26 20:00:00+10:00
 times: 5pm to 8pm
-location: "Mercy Theatre, ACU"
-gm-link: "http://www.google.com.au/maps/place/29+Young+St,+Fitzroy+VIC+3065"
+location:
+    name: "Mercy Theatre, ACU"
+    address:
+      street: 29 Young St
+      locality: Fitzroy
+      region: VIC
+      postcode: 3065
+      country: Australia
+    url: "http://www.google.com.au/maps/place/29+Young+St,+Fitzroy+VIC+3065"
 excerpt: >
   Join us to hear from guest speakers, Carole McDonald RSM, Nick Saviadis from Etiko, Maddie Kelly from Stop the Traffik and Dr. Mark Zirnsak, Director of Justice and International Mission of the Uniting Church. Find out what you can do to help.
 permalink: events/2015/human-trafficking.html
