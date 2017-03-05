@@ -1,5 +1,6 @@
 body {
-  margin-top: $navbar-height;
+  padding-top: $navbar-height + 20px;
+  padding-bottom: 0;
 }
 
 .navbar-nav > li.dropdown > a {

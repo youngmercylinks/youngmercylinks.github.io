@@ -1,0 +1,75 @@
+a {
+  word-wrap: break-word;
+}
+
+a[href^="http://"]:after,
+a[href^="https://"]:after {
+  // font-family: 'FontAwesome';
+  // font-size: $font-size-small;
+  margin-left: 5px;
+  overflow: visible;
+  background-size: cover;
+  background-clip: border-box;
+  height: 0;
+  padding: 0;
+  content: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1024 768" height="1em" width="1.2em" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg"><path d="M640 768H128V257.90599999999995L256 256V128H0v768h768V576H640V768zM384 128l128 128L320 448l128 128 192-192 128 128V128H384z" /></svg>');
+}
+
+a[href^="http://yml.org.au"]:after,
+a[href^="https://yml.org.au"]:after,
+a[href^="http://www.yml.org.au"]:after,
+a[href^="https://www.yml.org.au"]:after,
+a[href^="http://www.youngmercylinks.github.io"]:after,
+a[href^="https://www.youngmercylinks.github.io"]:after,
+a[href^="http://youngmercylinks.github.io"]:after,
+a[href^="https://youngmercylinks.github.io"]:after  {
+  background: none;
+}
+
+.link-unstyled {
+  > a:after {
+    content: none;
+    margin: 0;
+  }
+  > a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: inherit;
+  }
+}
+
+a.link-unstyled,
+a.link-unstyled:hover,
+a.link-unstyled:focus {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a.link-unstyled:after {
+  content: none;
+}
+
+.link-noglpyh {
+  > a:after {
+    content: "";
+    margin: 0;
+  }
+  > a, a:hover, a:focus {
+    text-decoration: inherit;
+  }
+}
+
+a.link-noglyph:after {
+  content: none;
+}
+
+a.link-subtle,
+a.link-subtle:hover,
+a.link-subtle:focus {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a.link-subtle:after {
+  content: none;
+}

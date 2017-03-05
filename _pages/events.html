@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: list-page
 title: "Events"
 permalink: /events.html
 ---
-<ul class="post-list" id="event-list">
+<div class="post-list" id="event-list">
   {% assign events = site.events %}
   {% for event in events %}
-    <div class="row text-row-wide event-list__event">
+    <!-- <div class="row text-row-wide event-list__event"> -->
       <div class="{% if event.thumbnail %}col-sm-9 pull-right restore-padding{% else %}col-sm-12{% endif %}">
         <h4 class="media-heading link-noglpyh">
           <a href="{{ event.permalink }}">
@@ -27,9 +27,9 @@ permalink: /events.html
       <div class="{% if event.thumbnail %}col-sm-9 pull-right restore-padding{% else %}col-sm-12{% endif %}">
         <p>{{ event.excerpt | strip_html }}<p>
       </div>
-    </div>
+    <!-- </div> -->
   {% endfor %}
-</ul>
+</div>
 
 {% unless events %}
 <div align="center" style="margin-bottom: 25px; color: #7c87c8;">

@@ -1,5 +1,17 @@
-<footer class="footer">
-  <div class="wrapper">
+<footer class="footer--site">
+  <div class="container footer--contact">
+    <div class="footer--contact__left">
+      <img src="images/email.svg" alt="Email:" height="20px" /> {{ site.data.emails.coordinator.address }}
+    </div>
+    <div class="footer--contact__right">
+    <ul class="list-inline">
+      <li><img src="images/facebook.svg" alt="Facebook" height="20px" /></li>
+      <li><img src="images/twitter.svg" alt="Twitter" height="20px" /></li>
+      <li><img src="images/instagram.svg" alt="Instagram" height="20px" /></li>
+    </ul>
+  </div>
+  </div>
+  <div class="container footer--fineprint">
     <ul class="list-inline text-muted centering">
       <li>&copy; 2015 Young Mercy Links. Powered by <a href="{{ site.data.links.github.repos.website }}">GitHub</a>.</li>
       <li><a href="/credits.html">Credits</a></li>

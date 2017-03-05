@@ -3,29 +3,18 @@
 ---
 @charset "utf-8";
 
+// NOTE: Ensure that appropriate normalisation CSS is always
+// included---otherwise, HTML5 elements may not render correctly in legacy
+// broswers.
+// The _normalize.scss included with Bootstrap is sufficient for this.
 
+// $spacing-unit:     30px;
 
-// // Our variables
-// $base-font-family: Helvetica, Arial, sans-serif;
-// $base-font-size:   16px;
-// $small-font-size:  $base-font-size * 0.875;
-// $base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-// $text-color:       #111;
-// $background-color: #fdfdfd;
-// $brand-color:      #2a7ae2;
+// // Width of the content area
+// $content-width:    660px;
 //
-// $grey-color:       #828282;
-// $grey-color-light: lighten($grey-color, 40%);
-// $grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    660px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
+// $on-palm:          600px;
+// $on-laptop:        800px;
 
 
 
@@ -45,8 +34,8 @@ $on-laptop:        800px;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "variables",
-        "bootstrap",
-        "patches"
-;
+// @import "variables";
+@import "yml-theme";
+@import "bootstrap";
+@import "yml";
+// @import "patches";

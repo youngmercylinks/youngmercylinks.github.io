@@ -1,4 +1,4 @@
-{% capture location %}{{ page.url | remove_first:'/' | split:'/' | first | split:'.' | first }}{% endcapture %}<nav role="navigation" class="navbar navbar-default navbar-fixed-top navbar-yml-blue">
+{% capture location %}{{ page.url | remove_first:'/' | split:'/' | first | split:'.' | first }}{% endcapture %}<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -16,31 +16,12 @@
         <li{% if location == 'index' %} class="active" {% endif %}>
           <a href="/">Home</a>
         </li>
-        {% comment %}<li class="dropdown{% if location == 'about' %} active{% endif %}">
-          <a href="/about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li{% if location == 'about' %} class="active" {% endif %}><a href="/about.html">About YML</a></li>
-            <li{% if location == 'mission' %} class="active" {% endif %}><a href="/about/mission.html">Mission Statement</a></li>
-            <li{% if location == 'members' %} class="active" {% endif %}><a href="/about/members.html">Our Members</a></li>
-          </ul>
-        </li>
-        <li class="dropdown-standin{% if location == 'about' %} active{% endif %}">
-          <a href="/about.html">About</a>
-        </li>{% endcomment %}
         <li{% if location == 'about' %} class="active" {% endif %}>
           <a href="/about.html">About</a>
         </li>
         <li{% if location == 'events' %} class="active" {% endif %}>
           <a href="/events.html">Events</a>
         </li>
-        {% comment %}
-        <li{% if location == 'faq' %} class="active" {% endif %}>
-          <a href="/faq.html">FAQ</a>
-        </li>
-        <li{% if location == 'links' %} class="active" {% endif %}>
-          <a href="/links.html">Links</a>
-        </li>
-        {% endcomment %}
         <li{% if location == 'news' %} class="active" {% endif %}>
           <a href="/news.html">News</a>
         </li>

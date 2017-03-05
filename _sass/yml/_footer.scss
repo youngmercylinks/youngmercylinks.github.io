@@ -28,7 +28,7 @@ body {
       padding-bottom: 0.25em * 1.4;
     > .text-muted {
       margin: 0;
-      font-size: $font-size-very-small;
+      font-size: ceil(($font-size-base * 0.6));
       text-align: center;
     }
   }

@@ -17,7 +17,8 @@ og:
 timezone: Australia/Melbourne
 markdown: kramdown
 sass:
-  style: compressed
+  style: expanded
+  sourcemap: auto
 
 include: ['_pages']
 permalink: '/blog/:year/:month/:title.html'

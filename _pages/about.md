@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: text-page
 maintitle: About YML
 title: About YML
 permalink: /about.html

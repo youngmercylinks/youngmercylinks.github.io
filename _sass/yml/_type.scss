@@ -14,7 +14,7 @@
 }
 
 .text-shadow {
-  text-shadow: 0 1px 1px rgba(0,0,0,0.67);
+  @include text-shadow (0,1px,1px);
 }
 
 // Headings
@@ -22,17 +22,10 @@
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
-  line-height: $headings-line-height;
-  color: $headings-color;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.67);
-
+  @include text-shadow (0,1px,1px);
   small,
   .small {
-    font-weight: normal;
-    line-height: 1;
-    color: $headings-small-color;
+    font-weight: 400;
   }
 }
 

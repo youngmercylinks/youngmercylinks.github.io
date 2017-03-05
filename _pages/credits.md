@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: text-page
 title: Credits
 permalink: /credits.html
 ---
