@@ -1,10 +1,15 @@
 ---
+title: May Social Justice Evening
+date: 2015-05-03 12:42:00 +10:00
+tags:
+- justice evening
+- event
+- asylum seekers
+- refugees
 layout: post
-title: 'May Social Justice Evening'
-date: 2015-05-03 12:42
-tags: ['justice evening', 'event', 'asylum seekers', 'refugees']
 author: Nathan
 ---
+
 Come along to our May social justice evening, "We'll walk with you" to hear the stories behind arriving in Australia as a refugee or asylum seeker.
 
 13 May 2015, 5pm to 8pm, Mercy lecture theatre, ACU, 19 Young St. Fitzroy.

@@ -1,9 +1,10 @@
 ---
+title: About YML
+permalink: "/about.html"
 layout: text-page
 maintitle: About YML
-title: About YML
-permalink: /about.html
 ---
+
 ## What is Young Mercy Links?
 
 In 2005, the Institute of the Sisters of Mercy of Australia (now

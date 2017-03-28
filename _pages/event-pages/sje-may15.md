@@ -1,11 +1,12 @@
 ---
+title: We'll walk with you
+permalink: "/links/events/2015/walk-with-you.html"
 layout: page
-title: "We'll walk with you"
-permalink: /links/events/2015/walk-with-you.html
 redirect_from:
-  - /walk15.html
-  - /walk15/
+- "/walk15.html"
+- "/walk15/"
 ---
+
 More information from the May 2015 social justice evening *We'll walk with
 you: the stories behind arriving in Australia* can be found below.
 

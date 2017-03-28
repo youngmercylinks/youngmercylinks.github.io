@@ -1,10 +1,15 @@
 ---
+title: We&rsquo;ll walk with you
+date: 2015-07-03 12:00:00 +10:00
+tags:
+- justice evening
+- event
+- asylum seekers
+- refugees
 layout: post
-title: 'We&rsquo;ll walk with you'
-date: 2015-07-03 12:00
-tags: ['justice evening', 'event', 'asylum seekers', 'refugees']
 author: Nikita
 ---
+
 On May the 13th, in the Mercy lecture theatre at the Melbourne campus of Australian Catholic University, a wonderful event took place, organised and presented by members of Young Mercy Links. <!-- more -->
 
 The organising committee chose the title of *We'll Walk With You*, as the evening's aim was to help those in attendance to become better equipped to support those seeking asylum in Australia.

@@ -1,8 +1,9 @@
 ---
-layout: text-page
 title: Credits
-permalink: /credits.html
+permalink: "/credits.html"
+layout: text-page
 ---
+
 {% include construction.html %}
 
 This site is hosted for free on [GitHub Pages](http://pages.github.com/). It is built using [Jekyll](http://jekyllrb.com/) and

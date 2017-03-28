@@ -1,37 +1,48 @@
-# Site settings
+---
 title: Young Mercy Links
-description: >
-  The official website of Young Mercy Links, a group of young adults who
-  work together in the spirit of Mercy to help marginalised people and raise
-  awareness of social justice issues.
-url: "http://yml.org.au"
+timezone: Australia/Melbourne
+collections:
+  events:
+    title: Events
+    output: true
+    permalink: "/events/:year/:title.html"
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+description: 'The official website of Young Mercy Links, a group of young adults who
+  work together in the spirit of Mercy to help marginalised people and raise awareness
+  of social justice issues.
+
+'
+url: http://yml.org.au
 twitter_username: youngmercylinks
-github_username:  youngmercylinks
+github_username: youngmercylinks
 og:
   image:
     location: "/OpenGraph_2015-05-05.png"
     width: 1200
     height: 650
-
-# Build settings
-timezone: Australia/Melbourne
 markdown: kramdown
 sass:
   style: expanded
   sourcemap: auto
-
-include: ['_pages']
-permalink: '/blog/:year/:month/:title.html'
+include:
+- _pages
+permalink: "/blog/:year/:month/:title.html"
 relative_permalinks: false
 excerpt_separator: "<!-- more -->"
-
-exclude: ['CNAME', 'Gemfile*', 'exclude', 'README.md', 'LICENCE.txt', '_pages/members.html',  '_pages/mission.html', '_event_drafts']
-
-collections:
-  events:
-    output: true
-    permalink: /events/:year/:title.html
-
+exclude:
+- CNAME
+- Gemfile*
+- exclude
+- README.md
+- LICENCE.txt
+- _pages/members.html
+- _pages/mission.html
+- _event_drafts
 gems:
-  - jekyll-sitemap
-  - jekyll-redirect-from
+- jekyll-sitemap
+- jekyll-redirect-from

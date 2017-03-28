@@ -1,5 +1,6 @@
 ---
 ---
+
 User-agent: *
 {% for page in site.pages %}{% if page.noindex %}{% assign isset = true %}Disallow: {{ page.url }}
 {% endif %}{% endfor %}{% if isset != true %}Disallow:

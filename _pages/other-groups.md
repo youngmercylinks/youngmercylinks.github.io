@@ -1,9 +1,10 @@
 ---
+title: Other Groups
+permalink: "/contact/othergroups.html"
 layout: subpages-contact
 maintitle: Contact
-title: Other Groups
-permalink: /contact/othergroups.html
 ---
+
 <!-- You can find other Mercy young adult networks here: -->
 
 ### MAGnet
